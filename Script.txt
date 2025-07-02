@@ -1,0 +1,158 @@
+# Make sure the script uses good coding practices proper indentations there are no unused code blocks 
+no unused variables  no syntax errors unused variables All tasks are modular, robust, and error-checked
+
+
+# Analize the intire script take in consideration the script monolith structure and logic of execution, i want you to give me recomandations to refactor [ LOGGING SYSTEM ] [ TASK 1: CENTRAL COORDINATION POLICY ] [ GLOBALS & INITIALIZATION ] [ ERROR HANDLING ] into 1 united script policy that controls the other tasks to make it more modular more easy to add new tasks
+
+# =====================[ PER-TASK/ACTION SCRIPT SUMMARY ]====================
+# 1. Central Coordination Policy: Manages global lists (bloatware, essential apps) for all tasks.
+# 2. System Protection: Ensures restore points and system safety before changes.
+# 3. Package Manager Setup: Installs/updates winget and Chocolatey.
+# 4. System Inventory: Collects hardware/software info.
+# 5. Remove Bloatware: Removes unwanted apps using global lists.
+# 6. Install Essentials: Installs missing essential apps.
+# 7. Upgrade Packages: Updates all upgradable software.
+# 8. Privacy & Telemetry: Disables telemetry and privacy-intrusive features.
+# 9. Windows Update: Installs Windows and security updates.
+# 10. Restore Point & Disk Cleanup: Manages restore points and cleans disk.
+# 11. HTML Report: Generates a comprehensive HTML report.
+# 12. Reboot Check: Checks and prompts for reboot if required.
+# Controller: Initializes context, runs all tasks, handles logging and cleanup.
+
+# =====================[ DETAILED TASK & ACTION DESCRIPTION WITH LOGIC ]====================
+# 1. Central Coordination Policy
+#    - Loads and manages global bloatware and essential app lists.
+#    - Makes these lists available to all tasks via shared context.
+#    - Ensures consistency and easy updates for future maintenance.
+#    - Logic: 
+#        * Reads bloatware and essential app lists from files (e.g., Bloatware.txt) or embedded arrays using Get-Content or hardcoded arrays.
+#        * Validates entries by removing duplicates (Select-Object -Unique), trimming whitespace (Trim()), and filtering out empty/null values.
+#        * Stores validated lists in $Context.BloatwareList and $Context.EssentialAppsList for global access.
+#        * Provides utility functions (e.g., Get-BloatwareList, Add-ToBloatwareList) for other tasks to query or update these lists at runtime.
+#        * Logs each step: file read, validation, storage, and any errors encountered, using Write-Log.
+#        * Supports dynamic updates: if a task adds/removes an entry, the change is logged and reflected in $Context.
+# 2. System Protection
+#    - Checks if System Restore is enabled; enables if not.
+#    - Creates a restore point before any system changes.
+#    - Logs all actions for traceability.
+#    - Logic:
+#        * Uses WMI (Get-WmiObject -Class SystemRestore) or COM objects to check if System Restore is enabled on the system drive.
+#        * If disabled, enables System Restore by setting registry keys or using Enable-ComputerRestore.
+#        * Creates a restore point using Checkpoint-Computer -Description 'Pre-Maintenance'.
+#        * Waits for restore point creation to complete, checks for errors, and verifies restore point existence.
+#        * Logs each step, including warnings if restore point creation fails or is skipped due to policy.
+#        * Handles exceptions and continues if restore point cannot be created, but logs a high-priority warning.
+# 3. Package Manager Setup
+#    - Checks for presence of winget and Chocolatey.
+#    - Installs or updates them as needed.
+#    - Ensures package managers are ready for subsequent tasks.
+#    - Logic:
+#        * Checks if 'winget' and 'choco' are available in $env:PATH using Get-Command.
+#        * If missing, installs winget via Microsoft Store (Invoke-Item ms-windows-store://pdp/?productid=9NBLGGH4NNS1) and choco via official script (Set-ExecutionPolicy Bypass; iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))).
+#        * If present, runs 'winget upgrade --all --silent' and 'choco upgrade all -y' to update package managers.
+#        * Handles installation errors with try/catch, logs all actions, and retries if possible.
+#        * Verifies installation by running 'winget --version' and 'choco --version', logs results.
+#        * If installation fails, logs error and sets a flag in $Context to skip dependent tasks.
+# 4. System Inventory
+#    - Collects OS, hardware, disk, and network information.
+#    - Gathers a list of installed programs from registry, AppX, and winget.
+#    - Stores inventory in context for reporting and decision-making.
+#    - Logic:
+#        * Uses Get-ComputerInfo for OS/hardware, Get-WmiObject Win32_LogicalDisk for disks, Get-NetAdapter for network info.
+#        * Queries registry (HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall and Wow6432Node) for installed programs.
+#        * Uses 'winget list' and Get-AppxPackage for modern/Store apps.
+#        * Aggregates all results into $Context.Inventory as a hashtable with keys: OS, Hardware, Disks, Network, InstalledApps.
+#        * Logs inventory collection, including counts and any errors.
+#        * Handles access errors (e.g., registry permissions) and logs warnings if partial inventory is collected.
+# 5. Remove Bloatware
+#    - Compares installed programs with bloatware list.
+#    - Removes detected bloatware using AppX, winget, WMI, or registry uninstall.
+#    - Logs each removal and handles errors gracefully.
+#    - Logic:
+#        * Iterates over $Context.Inventory.InstalledApps.
+#        * For each app, checks for matches in $Context.BloatwareList (case-insensitive, supports wildcards/partial matches).
+#        * If match found, determines removal method: AppX (Remove-AppxPackage), winget (winget uninstall), choco (choco uninstall), or WMI/registry (Invoke-Command/UninstallString).
+#        * Attempts removal, logs success or failure for each app.
+#        * Catches and logs errors, continues with next app even if one fails.
+#        * Updates $Context.Inventory.InstalledApps after each removal.
+#        * Summarizes results: total removed, failed, and skipped.
+# 6. Install Essentials
+#    - Compares installed programs with essential app list.
+#    - Installs missing essentials via winget or Chocolatey.
+#    - Installs LibreOffice if no office suite is found.
+#    - Logic:
+#        * Compares $Context.EssentialAppsList with $Context.Inventory.InstalledApps (case-insensitive).
+#        * Identifies missing essentials, adds to install queue.
+#        * For each missing app, attempts install via winget ('winget install <app> --silent') or choco ('choco install <app> -y'), preferring winget.
+#        * Checks for any installed office suite; if none, installs LibreOffice.
+#        * After each install, verifies by checking $Context.Inventory.InstalledApps again.
+#        * Logs each install attempt, success, or failure.
+#        * Handles install errors, retries once, and logs persistent failures.
+# 7. Upgrade Packages
+#    - Uses winget to upgrade all upgradable packages.
+#    - Skips PowerShell 7 upgrade to avoid script interruption.
+#    - Logs upgrade results and errors.
+#    - Logic:
+#        * Runs 'winget upgrade --all --silent' and parses output.
+#        * Filters out PowerShell 7 from upgrade list to avoid breaking the running shell.
+#        * For each package, logs upgrade status (success/failure), including version before/after if possible.
+#        * Handles and logs errors, retries failed upgrades if possible.
+#        * Summarizes upgrade results in $Context.UpgradeSummary.
+# 8. Privacy & Telemetry
+#    - Disables Windows telemetry and privacy-invasive features via registry and services.
+#    - Disables related scheduled tasks.
+#    - Logs all privacy actions.
+#    - Logic:
+#        * Sets registry keys (e.g., HKLM:\SOFTWARE\Policies\Microsoft\Windows\DataCollection) to disable telemetry, advertising ID, feedback, etc.
+#        * Disables or sets to manual all telemetry-related services (e.g., DiagTrack, dmwappushservice) using Set-Service.
+#        * Disables scheduled tasks in \Microsoft\Windows\Customer Experience Improvement Program and similar folders.
+#        * Logs each change, verifies settings post-change, and records any errors.
+#        * If a setting cannot be changed, logs a warning and continues.
+# 9. Windows Update
+#    - Installs or updates PSWindowsUpdate module.
+#    - Runs Windows Update and logs results.
+#    - Handles update errors and retries if needed.
+#    - Logic:
+#        * Checks for PSWindowsUpdate module (Get-Module -ListAvailable), installs/updates if missing (Install-Module -Name PSWindowsUpdate).
+#        * Runs 'Get-WindowsUpdate' and 'Install-WindowsUpdate -AcceptAll -AutoReboot:$false'.
+#        * Logs update status, errors, and retry attempts.
+#        * If updates require reboot, sets flag in $Context.
+#        * Summarizes update results in $Context.WindowsUpdateSummary.
+# 10. Restore Point & Disk Cleanup
+#    - Keeps only the 5 most recent restore points.
+#    - Analyzes system errors and logs.
+#    - Runs disk cleanup, clears caches, temp files, and event logs.
+#    - Reports space recovered.
+#    - Logic:
+#        * Enumerates all restore points (Get-ComputerRestorePoint), deletes oldest if more than 5 exist (vssadmin delete shadows).
+#        * Uses cleanmgr.exe, Storage Sense, and Remove-Item for temp files, browser caches, and log files.
+#        * Clears Windows event logs using Get-EventLog | Clear-EventLog.
+#        * Calculates disk space before and after cleanup (Get-PSDrive), logs amount freed.
+#        * Logs all actions and any errors encountered.
+# 11. HTML Report
+#    - Collects logs and statistics from all tasks.
+#    - Generates a styled HTML report with per-task summaries.
+#    - Saves report to disk and logs location.
+#    - Logic:
+#        * Aggregates logs and $Context data for each task, including errors, warnings, and successes.
+#        * Formats results into a modern HTML report (with CSS, tables, and highlights for errors/warnings).
+#        * Writes report to disk (e.g., SystemMaintenanceReport.html) and logs the file path.
+#        * Optionally opens the report in the default browser.
+# 12. Reboot Check
+#    - Detects pending reboot conditions.
+#    - Prompts user to restart or defer, especially if deferred updates exist.
+#    - Logs reboot status.
+#    - Logic:
+#        * Checks registry keys (e.g., PendingFileRenameOperations) and system flags for pending reboot.
+#        * If reboot required, prompts user with options to restart now or later (Read-Host or GUI prompt).
+#        * Logs user choice and any actions taken.
+#        * If user defers, sets a reminder or schedules a reboot if policy requires.
+# Controller
+#    - Initializes context and environment.
+#    - Runs all tasks in order, passing shared state.
+#    - Handles logging, cleanup, and optional temp file deletion.
+#    - Logic:
+#        * Sets up $Context and environment (temp folders, logging, error handling, transcript).
+#        * Executes each task in sequence, passing $Context for shared state and logging.
+#        * Catches and logs errors centrally, continues with next task if possible.
+#        * Performs cleanup (removes temp files, stops transcript) at the end, logs summary.
