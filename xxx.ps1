@@ -69,7 +69,7 @@ Line 1700: [MAIN EXECUTION] - Script entry point
 #>
 
 # =====================[ UNIFIED POLICY CONTROLLER ]==================== 
-# Line 50: Main controller that orchestrates all tasks with unified policy
+# Main controller that orchestrates all tasks with unified policy
 
 function Invoke-SystemMaintenancePolicy {
     [CmdletBinding()]
@@ -135,7 +135,7 @@ function Invoke-SystemMaintenancePolicy {
 }
 
 # =====================[ GLOBALS & INITIALIZATION ]==================== 
-# Line 100: Global variables, constants, and initialization functions
+# Global variables, constants, and initialization functions
 
 # Global Constants
 $Script:SCRIPT_VERSION = "1.0.0"
@@ -161,14 +161,9 @@ $Script:ESSENTIAL_APPS = @(
     'Mozilla.Firefox',
     'Microsoft.Edge',
     '7zip.7zip',
-    'VideoLAN.VLC',
     'Adobe.Acrobat.Reader.64-bit',
     'Notepad++.Notepad++',
-    'Microsoft.VisualStudioCode',
-    'Git.Git',
-    'Python.Python.3',
     'Microsoft.WindowsTerminal',
-    'Microsoft.PowerToys',
     'WinRAR.WinRAR'
 )
 
@@ -285,37 +280,209 @@ function Initialize-BloatwareList {
 
 function Get-EmbeddedBloatwareList {
     return @(
+        'Acer.AcerCollection',
+        'Acer.AcerConfigurationManager',
+        'Acer.AcerPortal',
+        'Acer.AcerPowerManagement',
+        'Acer.AcerQuickAccess',
+        'Acer.AcerUEIPFramework',
+        'Acer.AcerUserExperienceImprovementProgram',
+        'Adobe.AdobeCreativeCloud',
+        'Adobe.AdobeExpress',
+        'Adobe.AdobeGenuineService',
+        'Amazon.AmazonPrimeVideo',
+        'ASUS.ASUSGiftBox',
+        'ASUS.ASUSLiveUpdate',
+        'ASUS.ASUSSplendidVideoEnhancementTechnology',
+        'ASUS.ASUSWebStorage',
+        'ASUS.ASUSZenAnywhere',
+        'ASUS.ASUSZenLink',
+        'Astian.Midori',
+        'AvantBrowser.AvantBrowser',
+        'Avast.AvastFreeAntivirus',
+        'AVG.AVGAntiVirusFree',
+        'Avira.Avira',
+        'Baidu.BaiduBrowser',
+        'Baidu.PCAppStore',
+        'Basilisk.Basilisk',
+        'Bitdefender.Bitdefender',
+        'Blisk.Blisk',
+        'Booking.com.Booking',
+        'BraveSoftware.BraveBrowser',
+        'CentBrowser.CentBrowser',
+        'Cliqz.Cliqz',
+        'Coowon.Coowon',
+        'CoolNovo.CoolNovo',
+        'CyberLink.MediaSuite',
+        'CyberLink.Power2Go',
+        'CyberLink.PowerDirector',
+        'CyberLink.PowerDVD',
+        'CyberLink.YouCam',
+        'Dell.CustomerConnect',
+        'Dell.DellDigitalDelivery',
+        'Dell.DellFoundationServices',
+        'Dell.DellHelpAndSupport',
+        'Dell.DellMobileConnect',
+        'Dell.DellPowerManager',
+        'Dell.DellProductRegistration',
+        'Dell.DellSupportAssist',
+        'Dell.DellUpdate',
+        'DigitalPersona.EpicPrivacyBrowser',
+        'Disney.DisneyPlus',
+        'Dooble.Dooble',
+        'DriverPack.DriverPackSolution',
+        'ESET.ESETNOD32Antivirus',
+        'Evernote.Evernote',
+        'ExpressVPN.ExpressVPN',
+        'Facebook.Facebook',
+        'FenrirInc.Sleipnir',
+        'FlashPeak.SlimBrowser',
+        'FlashPeak.Slimjet',
+        'Foxit.FoxitPDFReader',
+        'Gameloft.MarchofEmpires',
+        'G5Entertainment.HiddenCity',
+        'GhostBrowser.GhostBrowser',
+        'Google.YouTube',
+        'HP.HP3DDriveGuard',
+        'HP.HPAudioSwitch',
+        'HP.HPClientSecurityManager',
+        'HP.HPConnectionOptimizer',
+        'HP.HPDocumentation',
+        'HP.HPDropboxPlugin',
+        'HP.HPePrintSW',
+        'HP.HPJumpStart',
+        'HP.HPJumpStartApps',
+        'HP.HPJumpStartLaunch',
+        'HP.HPRegistrationService',
+        'HP.HPSupportSolutionsFramework',
+        'HP.HPSureConnect',
+        'HP.HPSystemEventUtility',
+        'HP.HPWelcome',
+        'HewlettPackard.SupportAssistant',
+        'Hulu.Hulu',
+        'Instagram.Instagram',
+        'IOBit.AdvancedSystemCare',
+        'IOBit.DriverBooster',
+        'KDE.Falkon',
+        'Kaspersky.Kaspersky',
+        'KeeperSecurity.Keeper',
+        'king.com.BubbleWitch',
+        'king.com.CandyCrush',
+        'king.com.CandyCrushFriends',
+        'king.com.CandyCrushSaga',
+        'king.com.CandyCrushSodaSaga',
+        'king.com.FarmHeroes',
+        'king.com.FarmHeroesSaga',
+        'Lenovo.AppExplorer',
+        'Lenovo.LenovoCompanion',
+        'Lenovo.LenovoExperienceImprovement',
+        'Lenovo.LenovoFamilyCloud',
+        'Lenovo.LenovoHotkeys',
+        'Lenovo.LenovoMigrationAssistant',
+        'Lenovo.LenovoModernIMController',
+        'Lenovo.LenovoServiceBridge',
+        'Lenovo.LenovoSolutionCenter',
+        'Lenovo.LenovoUtility',
+        'Lenovo.LenovoVantage',
+        'Lenovo.LenovoVoice',
+        'Lenovo.LenovoWiFiSecurity',
+        'LinkedIn.LinkedIn',
+        'Lunascape.Lunascape',
+        'Maxthon.Maxthon',
+        'McAfee.LiveSafe',
+        'McAfee.Livesafe',
+        'McAfee.SafeConnect',
+        'McAfee.Security',
+        'McAfee.WebAdvisor',
         'Microsoft.3DBuilder',
+        'Microsoft.Advertising.Xaml',
         'Microsoft.BingFinance',
+        'Microsoft.BingFoodAndDrink',
+        'Microsoft.BingHealthAndFitness',
         'Microsoft.BingNews',
         'Microsoft.BingSports',
+        'Microsoft.BingTravel',
         'Microsoft.BingWeather',
         'Microsoft.GetHelp',
         'Microsoft.Getstarted',
         'Microsoft.Microsoft3DViewer',
+        'Microsoft.MicrosoftOfficeHub',
+        'Microsoft.MicrosoftPowerBIForWindows',
         'Microsoft.MicrosoftSolitaireCollection',
+        'Microsoft.MinecraftUWP',
         'Microsoft.MixedReality.Portal',
+        'Microsoft.NetworkSpeedTest',
+        'Microsoft.News',
         'Microsoft.Office.OneNote',
+        'Microsoft.Office.Sway',
+        'Microsoft.OneConnect',
+        'Microsoft.OneDrive',
         'Microsoft.People',
+        'Microsoft.Print3D',
+        'Microsoft.ScreenSketch',
         'Microsoft.SkypeApp',
+        'Microsoft.SoundRecorder',
+        'Microsoft.StickyNotes',
         'Microsoft.Wallet',
+        'Microsoft.Whiteboard',
+        'Microsoft.WindowsFeedback',
         'Microsoft.WindowsFeedbackHub',
+        'Microsoft.WindowsMaps',
+        'Microsoft.WindowsReadingList',
+        'Microsoft.WindowsSoundRecorder',
         'Microsoft.Xbox.TCUI',
         'Microsoft.XboxApp',
         'Microsoft.XboxGameOverlay',
         'Microsoft.XboxGamingOverlay',
         'Microsoft.XboxIdentityProvider',
+        'Microsoft.XboxSpeechToTextOverlay',
         'Microsoft.ZuneMusic',
         'Microsoft.ZuneVideo',
-        'king.com.CandyCrushSaga',
-        'king.com.CandyCrushSodaSaga',
+        'Mozilla.SeaMonkey',
+        'Norton.OnlineBackup',
+        'Norton.Security',
+        'Opera.Opera',
+        'Opera.OperaGX',
+        'Orbitum.Orbitum',
+        'OtterBrowser.OtterBrowser',
+        'PaleMoon.PaleMoon',
+        'PCAccelerate.PCAcceleratePro',
+        'PCOptimizer.PCOptimizerPro',
+        'PicsArt.PicsartPhotoStudio',
+        'Piriform.CCleaner',
+        'Polarity.Polarity',
+        'Power2Go.Power2Go',
+        'PowerDirector.PowerDirector',
+        'QupZilla.QupZilla',
+        'QuteBrowser.QuteBrowser',
+        'RandomSaladGamesLLC.SimpleSolitaire',
+        'Reimage.ReimageRepair',
+        'RoyalRevolt2.RoyalRevolt2',
+        'Sleipnir.Sleipnir',
+        'SlingTV.Sling',
+        'Sogou.SogouExplorer',
         'Spotify.Spotify',
-        'TikTok.TikTok'
+        'SRWare.Iron',
+        'Sputnik.Sputnik',
+        'Superbird.Superbird',
+        'TheTorProject.TorBrowser',
+        'ThumbmunkeysLtd.PhototasticCollage',
+        'TikTok.TikTok',
+        'TorchMediaInc.Torch',
+        'TripAdvisor.TripAdvisor',
+        'Twitter.Twitter',
+        'UCWeb.UCBrowser',
+        'VivaldiTechnologies.Vivaldi',
+        'Waterfox.Waterfox',
+        'WildTangent.WildTangentGamesApp',
+        'WildTangent.WildTangentHelper',
+        'WPSOffice.WPSOffice',
+        'Yandex.YandexBrowser'
     )
 }
 
 # =====================[ LOGGING SYSTEM ]==================== 
-# Line 200: Centralized logging with multiple levels, error handling, and system requirements validation
+# Centralized logging functions
 
 function Initialize-LoggingSystem {
     [CmdletBinding()]
@@ -448,7 +615,7 @@ function Get-LogSummary {
 }
 
 # =====================[ ERROR HANDLING ]==================== 
-# Line 300: Global error handling, recovery mechanisms, and validation
+# Global error handling and recovery
 
 function Resolve-CriticalError {
     [CmdletBinding()]
@@ -632,7 +799,7 @@ function Invoke-PolicyTask {
 }
 
 # =====================[ CENTRAL COORDINATION POLICY ]==================== 
-# Line 400: Task 1 - Global lists management and coordination
+# Task 1: Global lists management
 
 function Initialize-CentralCoordinationPolicy {
     [CmdletBinding()]
@@ -703,7 +870,7 @@ function Get-BloatwareList {
 }
 
 # =====================[ SYSTEM PROTECTION ]==================== 
-# Line 500: Task 2 - System restore points and safety measures
+# Task 2: Restore points and safety
 
 function Initialize-SystemProtection {
     [CmdletBinding()]
@@ -791,7 +958,7 @@ function New-SystemRestorePoint {
 }
 
 # =====================[ PACKAGE MANAGER SETUP ]==================== 
-# Line 600: Task 3 - Winget and Chocolatey installation and updates
+# Task 3: Winget and Chocolatey
 
 function Initialize-PackageManagers {
     [CmdletBinding()]
@@ -913,7 +1080,7 @@ function Initialize-Chocolatey {
             Write-PolicyLog -Context $Context -Message "Chocolatey not found - attempting installation" -Level 'WARNING' -Task 'CHOCO'
             
             if (-not $Context.ReportOnlyMode) {
-                Install-Chocolatey -Context $Context
+                Install-Chocolatey -Context $Context  # <-- Fix: pass the Context parameter
                 return $true
             } else {
                 Write-PolicyLog -Context $Context -Message "Report-only mode: Skipping Chocolatey installation" -Level 'INFO' -Task 'CHOCO'
@@ -928,55 +1095,8 @@ function Initialize-Chocolatey {
     }
 }
 
-function Install-Chocolatey {
-    [CmdletBinding()]
-    param([hashtable]$Context)
-    
-    try {
-        Write-PolicyLog -Context $Context -Message "Installing Chocolatey package manager" -Level 'INFO' -Task 'CHOCO'
-        
-        # Set execution policy temporarily
-        $originalExecutionPolicy = Get-ExecutionPolicy
-        Set-ExecutionPolicy Bypass -Scope Process -Force
-        
-        # Download and install Chocolatey
-        [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072
-        
-        # Suppress output during Chocolatey installation
-        $originalProgressPreference = $ProgressPreference
-        $originalVerbosePreference = $VerbosePreference
-        $ProgressPreference = 'SilentlyContinue'
-        $VerbosePreference = 'SilentlyContinue'
-        
-        try {
-            $installScript = (New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1')
-            Invoke-Expression $installScript | Out-Null
-        } finally {
-            # Restore preferences
-            $ProgressPreference = $originalProgressPreference
-            $VerbosePreference = $originalVerbosePreference
-        }
-        
-        # Restore execution policy
-        Set-ExecutionPolicy $originalExecutionPolicy -Scope Process -Force
-        
-        # Verify installation
-        $chocoCommand = Get-Command choco -ErrorAction SilentlyContinue
-        if ($chocoCommand) {
-            Write-PolicyLog -Context $Context -Message "Chocolatey installed successfully" -Level 'SUCCESS' -Task 'CHOCO'
-        } else {
-            Write-PolicyLog -Context $Context -Message "Chocolatey installation verification failed" -Level 'WARNING' -Task 'CHOCO'
-        }
-        
-    } catch {
-        $errorMsg = "Failed to install Chocolatey: $($_.Exception.Message)"
-        Write-PolicyLog -Context $Context -Message $errorMsg -Level 'ERROR' -Task 'CHOCO'
-        throw
-    }
-}
-
 # =====================[ SYSTEM INVENTORY ]==================== 
-# Line 700: Task 4 - Hardware and software information collection
+# Task 4: Hardware and software information collection
 
 function Invoke-SystemInventory {
     [CmdletBinding()]
@@ -1165,7 +1285,7 @@ function Get-ServicesInformation {
 }
 
 # =====================[ REMOVE BLOATWARE ]==================== 
-# Line 800: Task 5 - Bloatware detection and removal
+# Task 5: Bloatware removal
 
 function Remove-SystemBloatware {
     [CmdletBinding()]
@@ -1410,7 +1530,7 @@ function Remove-RegistryApplication {
 }
 
 # =====================[ INSTALL ESSENTIALS ]==================== 
-# Line 900: Task 6 - Essential applications installation
+# Task 6: Essential applications installation
 
 function Install-EssentialApplications {
     [CmdletBinding()]
@@ -1644,7 +1764,7 @@ function Convert-ToChocolateyPackageName {
 }
 
 # =====================[ UPGRADE PACKAGES ]==================== 
-# Line 1000: Task 7 - System package updates
+# Task 7: System package updates
 
 function Update-SystemPackages {
     [CmdletBinding()]
@@ -1722,7 +1842,7 @@ function Update-SystemPackages {
 }
 
 # =====================[ PRIVACY & TELEMETRY ]==================== 
-# Line 1100: Task 8 - Privacy configuration and telemetry disabling
+# Task 8: Privacy configuration and telemetry disabling
 
 function Set-PrivacyTelemetrySettings {
     [CmdletBinding()]
@@ -1897,7 +2017,7 @@ function Set-TelemetryTasks {
 }
 
 # =====================[ WINDOWS UPDATE ]==================== 
-# Line 1200: Task 9 - Windows Update installation
+# Task 9: Windows Update installation
 
 function Install-WindowsUpdates {
     [CmdletBinding()]
@@ -2002,7 +2122,7 @@ function Test-RebootRequired {
 }
 
 # =====================[ RESTORE POINT & CLEANUP ]==================== 
-# Line 1300: Task 10 - System cleanup and restore point management
+# Task 10: Cleanup operations
 
 function Invoke-SystemCleanup {
     [CmdletBinding()]
@@ -2212,7 +2332,7 @@ function Start-DiskCleanup {
 }
 
 # =====================[ HTML REPORT ]==================== 
-# Line 1400: Task 11 - Comprehensive HTML report generation
+# Task 11: Report generation
 
 function New-HTMLReport {
     [CmdletBinding()]
@@ -2335,7 +2455,7 @@ $(if (Test-Path $Context.LogPath) { Get-Content -Path $Context.LogPath -Raw } el
 }
 
 # =====================[ REBOOT CHECK ]==================== 
-# Line 1500: Task 12 - Reboot requirement detection and user interaction
+# Task 12: Reboot management
 
 function Test-RebootRequirement {
     [CmdletBinding()]
@@ -2395,7 +2515,7 @@ function Show-RebootPrompt {
 }
 
 # =====================[ UTILITY FUNCTIONS ]==================== 
-# Line 1600: Helper functions and utilities
+# Helper functions
 
 function Complete-PolicyExecution {
     [CmdletBinding()]
@@ -2463,7 +2583,7 @@ function Test-SystemRestoreEnabled {
 }
 
 # =====================[ MAIN EXECUTION ]==================== 
-# Line 1700: Script entry point and execution logic
+# Script entry point
 
 # Validate system requirements
 Write-Host "Validating system requirements..." -ForegroundColor Cyan
