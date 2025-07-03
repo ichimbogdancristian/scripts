@@ -585,7 +585,6 @@ function Install-EssentialApps {
             @{ Name = "Mozilla Firefox"; WinGetId = "Mozilla.Firefox"; ChocoId = "firefox" },
             @{ Name = "7-Zip"; WinGetId = "7zip.7zip"; ChocoId = "7zip" },
             @{ Name = "Notepad++"; WinGetId = "Notepad++.Notepad++"; ChocoId = "notepadplusplus" },
-            @{ Name = "VLC Media Player"; WinGetId = "VideoLAN.VLC"; ChocoId = "vlc" },
             @{ Name = "Adobe Acrobat Reader"; WinGetId = "Adobe.Acrobat.Reader.64-bit"; ChocoId = "adobereader" }
         )
         
@@ -599,7 +598,7 @@ function Install-EssentialApps {
             $wingetSuccess = $false
             if (Get-Command winget -ErrorAction SilentlyContinue) {
                 try {
-                    $wingetProcess = Start-Process -FilePath "winget" -ArgumentList "install", "--id", $app.WinGetId, "--silent", "--accept-source-agreements", "--accept-package-agreements", "--disable-interactivity" -WindowStyle Hidden -PassThru -Wait
+                    $wingetProcess = Start-Process -FilePath "winget" -ArgumentList "install", "--id", $app.WinGetId, "--silent", "--accept-source-agreements", "--accept-package-agreements", "--disable-interactivity" -WindowStyle Hidden -PassThru -Wait -NoNewWindow
                     if ($wingetProcess.ExitCode -eq 0) {
                         $wingetSuccess = $true
                     }
@@ -612,7 +611,7 @@ function Install-EssentialApps {
             # Fall back to Chocolatey
             if (-not $wingetSuccess -and (Get-Command choco -ErrorAction SilentlyContinue)) {
                 try {
-                    $chocoProcess = Start-Process -FilePath "choco" -ArgumentList "install", $app.ChocoId, "-y", "--no-progress" -WindowStyle Hidden -PassThru -Wait
+                    $chocoProcess = Start-Process -FilePath "choco" -ArgumentList "install", $app.ChocoId, "-y", "--no-progress" -WindowStyle Hidden -PassThru -Wait -NoNewWindow
                     if ($chocoProcess.ExitCode -eq 0) {
                         $installedApps += $app.Name
                         Add-Change -Type "Installation" -Category "Installation" -Description "Installed essential application" -Details $app.Name
@@ -657,7 +656,7 @@ function Update-AllPackages {
         if (Get-Command winget -ErrorAction SilentlyContinue) {
             Write-Log "Updating winget packages..." -Level "INFO" -Category "Updates"
             try {
-                $wingetProcess = Start-Process -FilePath "winget" -ArgumentList "upgrade", "--all", "--silent", "--disable-interactivity" -WindowStyle Hidden -PassThru -Wait
+                $wingetProcess = Start-Process -FilePath "winget" -ArgumentList "upgrade", "--all", "--silent", "--disable-interactivity" -WindowStyle Hidden -PassThru -Wait -NoNewWindow
                 if ($wingetProcess.ExitCode -eq 0) {
                     $results.WinGetUpdates = 1  # Simplified count since we can't easily parse output
                     Add-Change -Type "Update" -Category "Updates" -Description "Updated winget packages" -Details $results.WinGetUpdates
@@ -672,7 +671,7 @@ function Update-AllPackages {
         if (Get-Command choco -ErrorAction SilentlyContinue) {
             Write-Log "Updating Chocolatey packages..." -Level "INFO" -Category "Updates"
             try {
-                $chocoProcess = Start-Process -FilePath "choco" -ArgumentList "upgrade", "all", "-y", "--no-progress" -WindowStyle Hidden -PassThru -Wait
+                $chocoProcess = Start-Process -FilePath "choco" -ArgumentList "upgrade", "all", "-y", "--no-progress" -WindowStyle Hidden -PassThru -Wait -NoNewWindow
                 if ($chocoProcess.ExitCode -eq 0) {
                     $results.ChocolateyUpdates = 1  # Simplified count since we can't easily parse output
                     Add-Change -Type "Update" -Category "Updates" -Description "Updated Chocolatey packages" -Details $results.ChocolateyUpdates
@@ -797,7 +796,7 @@ function Invoke-DiskCleanup {
         # Run Windows Disk Cleanup silently
         try {
             # Use cleanmgr with sageset to configure silent cleanup
-            $cleanmgrProcess = Start-Process -FilePath "cleanmgr" -ArgumentList "/sagerun:1" -WindowStyle Hidden -PassThru -Wait
+            $cleanmgrProcess = Start-Process -FilePath "cleanmgr" -ArgumentList "/sagerun:1" -WindowStyle Hidden -PassThru -Wait -NoNewWindow
             Write-Log "Windows Disk Cleanup completed silently" -Level "INFO" -Category "Cleanup"
         }
         catch {
