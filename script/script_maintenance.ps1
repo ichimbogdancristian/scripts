@@ -581,12 +581,18 @@ function Install-EssentialApps {
     
     return Invoke-SafeOperation -OperationName "Install Essential Applications" -Category "Installation" -ContinueOnError -ScriptBlock {
         $essentialApps = @(
-            @{ Name = "Google Chrome"; WinGetId = "Google.Chrome"; ChocoId = "googlechrome" },
-            @{ Name = "Mozilla Firefox"; WinGetId = "Mozilla.Firefox"; ChocoId = "firefox" },
-            @{ Name = "7-Zip"; WinGetId = "7zip.7zip"; ChocoId = "7zip" },
-            @{ Name = "Notepad++"; WinGetId = "Notepad++.Notepad++"; ChocoId = "notepadplusplus" },
-            @{ Name = "Adobe Acrobat Reader"; WinGetId = "Adobe.Acrobat.Reader.64-bit"; ChocoId = "adobereader" }
-        )
+            @{ Name = 'Adobe Acrobat Reader'; Winget = 'Adobe.Acrobat.Reader.64-bit'; Choco = 'adobereader' },
+            @{ Name = 'Google Chrome'; Winget = 'Google.Chrome'; Choco = 'googlechrome' },
+            @{ Name = 'Microsoft Edge'; Winget = 'Microsoft.Edge'; Choco = 'microsoft-edge' },
+            @{ Name = 'Total Commander'; Winget = 'Ghisler.TotalCommander'; Choco = 'totalcommander' },
+            @{ Name = 'PowerShell 7'; Winget = 'Microsoft.Powershell'; Choco = 'powershell' },
+            @{ Name = 'Windows Terminal'; Winget = 'Microsoft.WindowsTerminal'; Choco = 'microsoft-windows-terminal' },
+            @{ Name = 'WinRAR'; Winget = 'RARLab.WinRAR'; Choco = 'winrar' },
+            @{ Name = '7-Zip'; Winget = '7zip.7zip'; Choco = '7zip' },
+            @{ Name = 'Notepad++'; Winget = 'Notepad++.Notepad++'; Choco = 'notepadplusplus' },
+            @{ Name = 'PDF24 Creator'; Winget = 'PDF24.PDF24Creator'; Choco = 'pdf24' },
+            @{ Name = 'Java 8 Update'; Winget = 'Oracle.JavaRuntimeEnvironment'; Choco = 'javaruntime' }
+            )
         
         $installedApps = @()
         $failedApps = @()
@@ -797,7 +803,11 @@ function Invoke-DiskCleanup {
         try {
             # Use cleanmgr with sageset to configure silent cleanup
             $cleanmgrProcess = Start-Process -FilePath "cleanmgr" -ArgumentList "/sagerun:1" -WindowStyle Hidden -PassThru -Wait -NoNewWindow
-            Write-Log "Windows Disk Cleanup completed silently" -Level "INFO" -Category "Cleanup"
+            if ($cleanmgrProcess.ExitCode -eq 0) {
+                Write-Log "Windows Disk Cleanup completed successfully" -Level "INFO" -Category "Cleanup"
+            } else {
+                Write-Log "Windows Disk Cleanup completed with exit code: $($cleanmgrProcess.ExitCode)" -Level "WARNING" -Category "Cleanup"
+            }
         }
         catch {
             Write-Log "Failed to run Windows Disk Cleanup: $_" -Level "WARNING" -Category "Cleanup"
