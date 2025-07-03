@@ -1,8 +1,9 @@
-# Make sure the script uses good coding practices proper indentations there are no unused code blocks 
-no unused variables  no syntax errors unused variables All tasks are modular, robust, and error-checked
-
-
+# Make sure the script uses good coding practices proper indentations there are no unused code blocks no unapproved verb
+  no unused variables  no syntax errors unused variables All tasks are modular, robust, and error-checke
+# Use a monolith structure and globalize  structure 
 # Analize the intire script take in consideration the script monolith structure and logic of execution, i want you to give me recomandations to refactor [ LOGGING SYSTEM ] [ TASK 1: CENTRAL COORDINATION POLICY ] [ GLOBALS & INITIALIZATION ] [ ERROR HANDLING ] into 1 united script policy that controls the other tasks to make it more modular more easy to add new tasks
+# At the bigining of the script the must contain a scriptmap  for easy navigation
+
 
 # =====================[ PER-TASK/ACTION SCRIPT SUMMARY ]====================
 # 1. Central Coordination Policy: Manages global lists (bloatware, essential apps) for all tasks.
@@ -90,11 +91,9 @@ no unused variables  no syntax errors unused variables All tasks are modular, ro
 #        * Handles install errors, retries once, and logs persistent failures.
 # 7. Upgrade Packages
 #    - Uses winget to upgrade all upgradable packages.
-#    - Skips PowerShell 7 upgrade to avoid script interruption.
 #    - Logs upgrade results and errors.
 #    - Logic:
 #        * Runs 'winget upgrade --all --silent' and parses output.
-#        * Filters out PowerShell 7 from upgrade list to avoid breaking the running shell.
 #        * For each package, logs upgrade status (success/failure), including version before/after if possible.
 #        * Handles and logs errors, retries failed upgrades if possible.
 #        * Summarizes upgrade results in $Context.UpgradeSummary.

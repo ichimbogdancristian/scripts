@@ -1,0 +1,2771 @@
+﻿{
+    "Hardware":  {
+                     "Motherboard":  {
+                                         "Manufacturer":  "LENOVO",
+                                         "Product":  "LNVNB161216",
+                                         "Version":  " NO DPK"
+                                     },
+                     "Memory":  [
+                                    {
+                                        "Capacity":  17179869184,
+                                        "Speed":  3200,
+                                        "Manufacturer":  "Kingston"
+                                    },
+                                    {
+                                        "Capacity":  17179869184,
+                                        "Speed":  3200,
+                                        "Manufacturer":  "Kingston"
+                                    }
+                                ],
+                     "BIOS":  {
+                                  "Manufacturer":  "LENOVO",
+                                  "Version":  "LENOVO - 1",
+                                  "ReleaseDate":  "20230920000000.000000+000"
+                              },
+                     "Processor":  {
+                                       "Name":  "AMD Ryzen 7 4800H with Radeon Graphics         ",
+                                       "NumberOfCores":  8,
+                                       "NumberOfLogicalProcessors":  16
+                                   }
+                 },
+    "Network":  [
+                    {
+                        "Name":  "vEthernet (Default Switch)",
+                        "InterfaceDescription":  "Hyper-V Virtual Ethernet Adapter",
+                        "LinkSpeed":  "10 Gbps"
+                    },
+                    {
+                        "Name":  "Ethernet",
+                        "InterfaceDescription":  "Realtek PCIe GbE Family Controller",
+                        "LinkSpeed":  "1 Gbps"
+                    },
+                    {
+                        "Name":  "vEthernet (WSL (Hyper-V firewall))",
+                        "InterfaceDescription":  "Hyper-V Virtual Ethernet Adapter #2",
+                        "LinkSpeed":  "10 Gbps"
+                    }
+                ],
+    "Disks":  {
+                  "Label":  "",
+                  "Drive":  "C:",
+                  "FreeSpaceGB":  273.96,
+                  "SizeGB":  476.07,
+                  "PercentFree":  57.5
+              },
+    "Services":  [
+                     {
+                         "Name":  "AarSvc_21e057f0",
+                         "Status":  1,
+                         "StartType":  3,
+                         "DisplayName":  "Agent Activation Runtime_21e057f0"
+                     },
+                     {
+                         "Name":  "AdobeARMservice",
+                         "Status":  4,
+                         "StartType":  2,
+                         "DisplayName":  "Adobe Acrobat Update Service"
+                     },
+                     {
+                         "Name":  "agent_ovpnconnect",
+                         "Status":  4,
+                         "StartType":  2,
+                         "DisplayName":  "OpenVPN Agent agent_ovpnconnect"
+                     },
+                     {
+                         "Name":  "ALG",
+                         "Status":  1,
+                         "StartType":  3,
+                         "DisplayName":  "Application Layer Gateway Service"
+                     },
+                     {
+                         "Name":  "AMD External Events Utility",
+                         "Status":  4,
+                         "StartType":  2,
+                         "DisplayName":  "AMD External Events Utility"
+                     },
+                     {
+                         "Name":  "AppIDSvc",
+                         "Status":  1,
+                         "StartType":  3,
+                         "DisplayName":  "Application Identity"
+                     },
+                     {
+                         "Name":  "Appinfo",
+                         "Status":  4,
+                         "StartType":  3,
+                         "DisplayName":  "Application Information"
+                     },
+                     {
+                         "Name":  "AppMgmt",
+                         "Status":  1,
+                         "StartType":  3,
+                         "DisplayName":  "Application Management"
+                     },
+                     {
+                         "Name":  "AppReadiness",
+                         "Status":  1,
+                         "StartType":  3,
+                         "DisplayName":  "App Readiness"
+                     },
+                     {
+                         "Name":  "AppVClient",
+                         "Status":  1,
+                         "StartType":  4,
+                         "DisplayName":  "Microsoft App-V Client"
+                     },
+                     {
+                         "Name":  "AppXSvc",
+                         "Status":  4,
+                         "StartType":  3,
+                         "DisplayName":  "AppX Deployment Service (AppXSVC)"
+                     },
+                     {
+                         "Name":  "ApxSvc",
+                         "Status":  1,
+                         "StartType":  3,
+                         "DisplayName":  "Windows Virtual Audio Device Proxy Service"
+                     },
+                     {
+                         "Name":  "AssignedAccessManagerSvc",
+                         "Status":  1,
+                         "StartType":  3,
+                         "DisplayName":  "AssignedAccessManager Service"
+                     },
+                     {
+                         "Name":  "AudioEndpointBuilder",
+                         "Status":  4,
+                         "StartType":  2,
+                         "DisplayName":  "Windows Audio Endpoint Builder"
+                     },
+                     {
+                         "Name":  "Audiosrv",
+                         "Status":  4,
+                         "StartType":  2,
+                         "DisplayName":  "Windows Audio"
+                     },
+                     {
+                         "Name":  "autotimesvc",
+                         "Status":  1,
+                         "StartType":  3,
+                         "DisplayName":  "Cellular Time"
+                     },
+                     {
+                         "Name":  "AxInstSV",
+                         "Status":  1,
+                         "StartType":  3,
+                         "DisplayName":  "ActiveX Installer (AxInstSV)"
+                     },
+                     {
+                         "Name":  "BcastDVRUserService_21e057f0",
+                         "Status":  1,
+                         "StartType":  3,
+                         "DisplayName":  "GameDVR and Broadcast User Service_21e057f0"
+                     },
+                     {
+                         "Name":  "BDESVC",
+                         "Status":  1,
+                         "StartType":  3,
+                         "DisplayName":  "BitLocker Drive Encryption Service"
+                     },
+                     {
+                         "Name":  "BFE",
+                         "Status":  4,
+                         "StartType":  2,
+                         "DisplayName":  "Base Filtering Engine"
+                     },
+                     {
+                         "Name":  "BITS",
+                         "Status":  1,
+                         "StartType":  3,
+                         "DisplayName":  "Background Intelligent Transfer Service"
+                     },
+                     {
+                         "Name":  "BluetoothUserService_21e057f0",
+                         "Status":  4,
+                         "StartType":  3,
+                         "DisplayName":  "Bluetooth User Support Service_21e057f0"
+                     },
+                     {
+                         "Name":  "BrokerInfrastructure",
+                         "Status":  4,
+                         "StartType":  2,
+                         "DisplayName":  "Background Tasks Infrastructure Service"
+                     },
+                     {
+                         "Name":  "BTAGService",
+                         "Status":  4,
+                         "StartType":  3,
+                         "DisplayName":  "Bluetooth Audio Gateway Service"
+                     },
+                     {
+                         "Name":  "BthAvctpSvc",
+                         "Status":  4,
+                         "StartType":  3,
+                         "DisplayName":  "AVCTP service"
+                     },
+                     {
+                         "Name":  "bthserv",
+                         "Status":  4,
+                         "StartType":  3,
+                         "DisplayName":  "Bluetooth Support Service"
+                     },
+                     {
+                         "Name":  "camsvc",
+                         "Status":  4,
+                         "StartType":  3,
+                         "DisplayName":  "Capability Access Manager Service"
+                     },
+                     {
+                         "Name":  "CaptureService_21e057f0",
+                         "Status":  1,
+                         "StartType":  3,
+                         "DisplayName":  "CaptureService_21e057f0"
+                     },
+                     {
+                         "Name":  "cbdhsvc_21e057f0",
+                         "Status":  4,
+                         "StartType":  2,
+                         "DisplayName":  "Clipboard User Service_21e057f0"
+                     },
+                     {
+                         "Name":  "CDPSvc",
+                         "Status":  4,
+                         "StartType":  2,
+                         "DisplayName":  "Connected Devices Platform Service"
+                     },
+                     {
+                         "Name":  "CDPUserSvc_21e057f0",
+                         "Status":  4,
+                         "StartType":  2,
+                         "DisplayName":  "Connected Devices Platform User Service_21e057f0"
+                     },
+                     {
+                         "Name":  "CertPropSvc",
+                         "Status":  1,
+                         "StartType":  3,
+                         "DisplayName":  "Certificate Propagation"
+                     },
+                     {
+                         "Name":  "ClickToRunSvc",
+                         "Status":  4,
+                         "StartType":  2,
+                         "DisplayName":  "Microsoft Office Click-to-Run Service"
+                     },
+                     {
+                         "Name":  "ClipSVC",
+                         "Status":  1,
+                         "StartType":  3,
+                         "DisplayName":  "Client License Service (ClipSVC)"
+                     },
+                     {
+                         "Name":  "CloudBackupRestoreSvc_21e057f0",
+                         "Status":  1,
+                         "StartType":  3,
+                         "DisplayName":  "Cloud Backup and Restore Service_21e057f0"
+                     },
+                     {
+                         "Name":  "cloudidsvc",
+                         "Status":  1,
+                         "StartType":  3,
+                         "DisplayName":  "Microsoft Cloud Identity Service"
+                     },
+                     {
+                         "Name":  "com.docker.service",
+                         "Status":  4,
+                         "StartType":  2,
+                         "DisplayName":  "Docker Desktop Service"
+                     },
+                     {
+                         "Name":  "COMSysApp",
+                         "Status":  1,
+                         "StartType":  3,
+                         "DisplayName":  "COM+ System Application"
+                     },
+                     {
+                         "Name":  "ConsentUxUserSvc_21e057f0",
+                         "Status":  1,
+                         "StartType":  3,
+                         "DisplayName":  "ConsentUX User Service_21e057f0"
+                     },
+                     {
+                         "Name":  "CoreMessagingRegistrar",
+                         "Status":  4,
+                         "StartType":  2,
+                         "DisplayName":  "CoreMessaging"
+                     },
+                     {
+                         "Name":  "CredentialEnrollmentManagerUserSvc_21e057f0",
+                         "Status":  1,
+                         "StartType":  3,
+                         "DisplayName":  "CredentialEnrollmentManagerUserSvc_21e057f0"
+                     },
+                     {
+                         "Name":  "CryptSvc",
+                         "Status":  4,
+                         "StartType":  2,
+                         "DisplayName":  "Cryptographic Services"
+                     },
+                     {
+                         "Name":  "CscService",
+                         "Status":  1,
+                         "StartType":  3,
+                         "DisplayName":  "Offline Files"
+                     },
+                     {
+                         "Name":  "DcomLaunch",
+                         "Status":  4,
+                         "StartType":  2,
+                         "DisplayName":  "DCOM Server Process Launcher"
+                     },
+                     {
+                         "Name":  "dcsvc",
+                         "Status":  1,
+                         "StartType":  3,
+                         "DisplayName":  "Declared Configuration(DC) service"
+                     },
+                     {
+                         "Name":  "defragsvc",
+                         "Status":  1,
+                         "StartType":  3,
+                         "DisplayName":  "Optimize drives"
+                     },
+                     {
+                         "Name":  "DeviceAssociationBrokerSvc_21e057f0",
+                         "Status":  1,
+                         "StartType":  3,
+                         "DisplayName":  "DeviceAssociationBroker_21e057f0"
+                     },
+                     {
+                         "Name":  "DeviceAssociationService",
+                         "Status":  4,
+                         "StartType":  3,
+                         "DisplayName":  "Device Association Service"
+                     },
+                     {
+                         "Name":  "DeviceInstall",
+                         "Status":  1,
+                         "StartType":  3,
+                         "DisplayName":  "Device Install Service"
+                     },
+                     {
+                         "Name":  "DevicePickerUserSvc_21e057f0",
+                         "Status":  1,
+                         "StartType":  3,
+                         "DisplayName":  "DevicePicker_21e057f0"
+                     },
+                     {
+                         "Name":  "DevicesFlowUserSvc_21e057f0",
+                         "Status":  4,
+                         "StartType":  3,
+                         "DisplayName":  "DevicesFlow_21e057f0"
+                     },
+                     {
+                         "Name":  "DevQueryBroker",
+                         "Status":  1,
+                         "StartType":  3,
+                         "DisplayName":  "DevQuery Background Discovery Broker"
+                     },
+                     {
+                         "Name":  "Dhcp",
+                         "Status":  4,
+                         "StartType":  2,
+                         "DisplayName":  "DHCP Client"
+                     },
+                     {
+                         "Name":  "diagsvc",
+                         "Status":  1,
+                         "StartType":  3,
+                         "DisplayName":  "Diagnostic Execution Service"
+                     },
+                     {
+                         "Name":  "DiagTrack",
+                         "Status":  4,
+                         "StartType":  2,
+                         "DisplayName":  "Connected User Experiences and Telemetry"
+                     },
+                     {
+                         "Name":  "DialogBlockingService",
+                         "Status":  1,
+                         "StartType":  4,
+                         "DisplayName":  "DialogBlockingService"
+                     },
+                     {
+                         "Name":  "DispBrokerDesktopSvc",
+                         "Status":  4,
+                         "StartType":  2,
+                         "DisplayName":  "Display Policy Service"
+                     },
+                     {
+                         "Name":  "DisplayEnhancementService",
+                         "Status":  4,
+                         "StartType":  3,
+                         "DisplayName":  "Display Enhancement Service"
+                     },
+                     {
+                         "Name":  "DmEnrollmentSvc",
+                         "Status":  1,
+                         "StartType":  3,
+                         "DisplayName":  "Device Management Enrollment Service"
+                     },
+                     {
+                         "Name":  "dmwappushservice",
+                         "Status":  1,
+                         "StartType":  3,
+                         "DisplayName":  "Device Management Wireless Application Protocol (WAP) Push message Routing Service"
+                     },
+                     {
+                         "Name":  "Dnscache",
+                         "Status":  4,
+                         "StartType":  2,
+                         "DisplayName":  "DNS Client"
+                     },
+                     {
+                         "Name":  "DolbyDAXAPI",
+                         "Status":  4,
+                         "StartType":  2,
+                         "DisplayName":  "Dolby DAX API Service"
+                     },
+                     {
+                         "Name":  "DoSvc",
+                         "Status":  4,
+                         "StartType":  2,
+                         "DisplayName":  "Delivery Optimization"
+                     },
+                     {
+                         "Name":  "dot3svc",
+                         "Status":  1,
+                         "StartType":  3,
+                         "DisplayName":  "Wired AutoConfig"
+                     },
+                     {
+                         "Name":  "DPS",
+                         "Status":  4,
+                         "StartType":  2,
+                         "DisplayName":  "Diagnostic Policy Service"
+                     },
+                     {
+                         "Name":  "DsmSvc",
+                         "Status":  1,
+                         "StartType":  3,
+                         "DisplayName":  "Device Setup Manager"
+                     },
+                     {
+                         "Name":  "DsSvc",
+                         "Status":  4,
+                         "StartType":  3,
+                         "DisplayName":  "Data Sharing Service"
+                     },
+                     {
+                         "Name":  "DusmSvc",
+                         "Status":  4,
+                         "StartType":  2,
+                         "DisplayName":  "Data Usage"
+                     },
+                     {
+                         "Name":  "EapHost",
+                         "Status":  1,
+                         "StartType":  3,
+                         "DisplayName":  "Extensible Authentication Protocol"
+                     },
+                     {
+                         "Name":  "edgeupdate",
+                         "Status":  1,
+                         "StartType":  2,
+                         "DisplayName":  "Microsoft Edge Update Service (edgeupdate)"
+                     },
+                     {
+                         "Name":  "edgeupdatem",
+                         "Status":  1,
+                         "StartType":  3,
+                         "DisplayName":  "Microsoft Edge Update Service (edgeupdatem)"
+                     },
+                     {
+                         "Name":  "EFS",
+                         "Status":  1,
+                         "StartType":  3,
+                         "DisplayName":  "Encrypting File System (EFS)"
+                     },
+                     {
+                         "Name":  "embeddedmode",
+                         "Status":  1,
+                         "StartType":  3,
+                         "DisplayName":  "Embedded Mode"
+                     },
+                     {
+                         "Name":  "EntAppSvc",
+                         "Status":  1,
+                         "StartType":  3,
+                         "DisplayName":  "Enterprise App Management Service"
+                     },
+                     {
+                         "Name":  "EventLog",
+                         "Status":  4,
+                         "StartType":  2,
+                         "DisplayName":  "Windows Event Log"
+                     },
+                     {
+                         "Name":  "EventSystem",
+                         "Status":  4,
+                         "StartType":  2,
+                         "DisplayName":  "COM+ Event System"
+                     },
+                     {
+                         "Name":  "Everything",
+                         "Status":  4,
+                         "StartType":  2,
+                         "DisplayName":  "Everything"
+                     },
+                     {
+                         "Name":  "fdPHost",
+                         "Status":  1,
+                         "StartType":  3,
+                         "DisplayName":  "Function Discovery Provider Host"
+                     },
+                     {
+                         "Name":  "FDResPub",
+                         "Status":  1,
+                         "StartType":  3,
+                         "DisplayName":  "Function Discovery Resource Publication"
+                     },
+                     {
+                         "Name":  "fhsvc",
+                         "Status":  1,
+                         "StartType":  3,
+                         "DisplayName":  "File History Service"
+                     },
+                     {
+                         "Name":  "FileSyncHelper",
+                         "Status":  4,
+                         "StartType":  3,
+                         "DisplayName":  "FileSyncHelper"
+                     },
+                     {
+                         "Name":  "FMAPOService",
+                         "Status":  4,
+                         "StartType":  2,
+                         "DisplayName":  "Fortemedia APO Control Service"
+                     },
+                     {
+                         "Name":  "FontCache",
+                         "Status":  4,
+                         "StartType":  2,
+                         "DisplayName":  "Windows Font Cache Service"
+                     },
+                     {
+                         "Name":  "FontCache3.0.0.0",
+                         "Status":  1,
+                         "StartType":  3,
+                         "DisplayName":  "Windows Presentation Foundation Font Cache 3.0.0.0"
+                     },
+                     {
+                         "Name":  "FrameServer",
+                         "Status":  4,
+                         "StartType":  3,
+                         "DisplayName":  "Windows Camera Frame Server"
+                     },
+                     {
+                         "Name":  "FrameServerMonitor",
+                         "Status":  4,
+                         "StartType":  3,
+                         "DisplayName":  "Windows Camera Frame Server Monitor"
+                     },
+                     {
+                         "Name":  "GameInputSvc",
+                         "Status":  1,
+                         "StartType":  3,
+                         "DisplayName":  "GameInput Service"
+                     },
+                     {
+                         "Name":  "GoogleChromeElevationService",
+                         "Status":  1,
+                         "StartType":  3,
+                         "DisplayName":  "Google Chrome Elevation Service (GoogleChromeElevationService)"
+                     },
+                     {
+                         "Name":  "GoogleUpdaterInternalService138.0.7194.0",
+                         "Status":  1,
+                         "StartType":  2,
+                         "DisplayName":  "Google Updater Internal Service (GoogleUpdaterInternalService138.0.7194.0)"
+                     },
+                     {
+                         "Name":  "GoogleUpdaterService138.0.7194.0",
+                         "Status":  1,
+                         "StartType":  2,
+                         "DisplayName":  "Google Updater Service (GoogleUpdaterService138.0.7194.0)"
+                     },
+                     {
+                         "Name":  "gpsvc",
+                         "Status":  1,
+                         "StartType":  2,
+                         "DisplayName":  "Group Policy Client"
+                     },
+                     {
+                         "Name":  "GraphicsPerfSvc",
+                         "Status":  1,
+                         "StartType":  3,
+                         "DisplayName":  "GraphicsPerfSvc"
+                     },
+                     {
+                         "Name":  "HgClientService",
+                         "Status":  1,
+                         "StartType":  3,
+                         "DisplayName":  "Host Guardian Client Service"
+                     },
+                     {
+                         "Name":  "hidserv",
+                         "Status":  4,
+                         "StartType":  3,
+                         "DisplayName":  "Human Interface Device Service"
+                     },
+                     {
+                         "Name":  "HNS",
+                         "Status":  4,
+                         "StartType":  3,
+                         "DisplayName":  "Host Network Service"
+                     },
+                     {
+                         "Name":  "hpatchmon",
+                         "Status":  1,
+                         "StartType":  3,
+                         "DisplayName":  "Hotpatch Monitoring Service"
+                     },
+                     {
+                         "Name":  "HvHost",
+                         "Status":  4,
+                         "StartType":  3,
+                         "DisplayName":  "HV Host Service"
+                     },
+                     {
+                         "Name":  "icssvc",
+                         "Status":  1,
+                         "StartType":  3,
+                         "DisplayName":  "Windows Mobile Hotspot Service"
+                     },
+                     {
+                         "Name":  "IKEEXT",
+                         "Status":  4,
+                         "StartType":  2,
+                         "DisplayName":  "IKE and AuthIP IPsec Keying Modules"
+                     },
+                     {
+                         "Name":  "InstallService",
+                         "Status":  4,
+                         "StartType":  3,
+                         "DisplayName":  "Microsoft Store Install Service"
+                     },
+                     {
+                         "Name":  "InventorySvc",
+                         "Status":  1,
+                         "StartType":  2,
+                         "DisplayName":  "Inventory and Compatibility Appraisal service"
+                     },
+                     {
+                         "Name":  "iphlpsvc",
+                         "Status":  4,
+                         "StartType":  2,
+                         "DisplayName":  "IP Helper"
+                     },
+                     {
+                         "Name":  "IpxlatCfgSvc",
+                         "Status":  1,
+                         "StartType":  3,
+                         "DisplayName":  "IP Translation Configuration Service"
+                     },
+                     {
+                         "Name":  "KeyIso",
+                         "Status":  4,
+                         "StartType":  3,
+                         "DisplayName":  "CNG Key Isolation"
+                     },
+                     {
+                         "Name":  "KtmRm",
+                         "Status":  1,
+                         "StartType":  3,
+                         "DisplayName":  "KtmRm for Distributed Transaction Coordinator"
+                     },
+                     {
+                         "Name":  "LanmanServer",
+                         "Status":  4,
+                         "StartType":  2,
+                         "DisplayName":  "Server"
+                     },
+                     {
+                         "Name":  "LanmanWorkstation",
+                         "Status":  4,
+                         "StartType":  2,
+                         "DisplayName":  "Workstation"
+                     },
+                     {
+                         "Name":  "lfsvc",
+                         "Status":  4,
+                         "StartType":  3,
+                         "DisplayName":  "Geolocation Service"
+                     },
+                     {
+                         "Name":  "LicenseManager",
+                         "Status":  4,
+                         "StartType":  3,
+                         "DisplayName":  "Windows License Manager Service"
+                     },
+                     {
+                         "Name":  "lltdsvc",
+                         "Status":  1,
+                         "StartType":  3,
+                         "DisplayName":  "Link-Layer Topology Discovery Mapper"
+                     },
+                     {
+                         "Name":  "lmhosts",
+                         "Status":  4,
+                         "StartType":  3,
+                         "DisplayName":  "TCP/IP NetBIOS Helper"
+                     },
+                     {
+                         "Name":  "LocalKdc",
+                         "Status":  1,
+                         "StartType":  3,
+                         "DisplayName":  "Kerberos Local Key Distribution Center"
+                     },
+                     {
+                         "Name":  "LSM",
+                         "Status":  4,
+                         "StartType":  2,
+                         "DisplayName":  "Local Session Manager"
+                     },
+                     {
+                         "Name":  "LxpSvc",
+                         "Status":  1,
+                         "StartType":  3,
+                         "DisplayName":  "Language Experience Service"
+                     },
+                     {
+                         "Name":  "MapsBroker",
+                         "Status":  1,
+                         "StartType":  2,
+                         "DisplayName":  "Downloaded Maps Manager"
+                     },
+                     {
+                         "Name":  "McpManagementService",
+                         "Status":  1,
+                         "StartType":  3,
+                         "DisplayName":  "McpManagementService"
+                     },
+                     {
+                         "Name":  "MDCoreSvc",
+                         "Status":  4,
+                         "StartType":  2,
+                         "DisplayName":  "Microsoft Defender Core Service"
+                     },
+                     {
+                         "Name":  "MessagingService_21e057f0",
+                         "Status":  1,
+                         "StartType":  3,
+                         "DisplayName":  "MessagingService_21e057f0"
+                     },
+                     {
+                         "Name":  "MicrosoftEdgeElevationService",
+                         "Status":  1,
+                         "StartType":  3,
+                         "DisplayName":  "Microsoft Edge Elevation Service (MicrosoftEdgeElevationService)"
+                     },
+                     {
+                         "Name":  "MozillaMaintenance",
+                         "Status":  1,
+                         "StartType":  3,
+                         "DisplayName":  "Mozilla Maintenance Service"
+                     },
+                     {
+                         "Name":  "mpssvc",
+                         "Status":  4,
+                         "StartType":  2,
+                         "DisplayName":  "Windows Defender Firewall"
+                     },
+                     {
+                         "Name":  "MSDTC",
+                         "Status":  1,
+                         "StartType":  3,
+                         "DisplayName":  "Distributed Transaction Coordinator"
+                     },
+                     {
+                         "Name":  "MSiSCSI",
+                         "Status":  1,
+                         "StartType":  3,
+                         "DisplayName":  "Microsoft iSCSI Initiator Service"
+                     },
+                     {
+                         "Name":  "msiserver",
+                         "Status":  1,
+                         "StartType":  3,
+                         "DisplayName":  "Windows Installer"
+                     },
+                     {
+                         "Name":  "MsKeyboardFilter",
+                         "Status":  1,
+                         "StartType":  3,
+                         "DisplayName":  "Microsoft Keyboard Filter"
+                     },
+                     {
+                         "Name":  "NaturalAuthentication",
+                         "Status":  1,
+                         "StartType":  3,
+                         "DisplayName":  "Natural Authentication"
+                     },
+                     {
+                         "Name":  "NcaSvc",
+                         "Status":  1,
+                         "StartType":  3,
+                         "DisplayName":  "Network Connectivity Assistant"
+                     },
+                     {
+                         "Name":  "NcbService",
+                         "Status":  4,
+                         "StartType":  3,
+                         "DisplayName":  "Network Connection Broker"
+                     },
+                     {
+                         "Name":  "NcdAutoSetup",
+                         "Status":  1,
+                         "StartType":  3,
+                         "DisplayName":  "Network Connected Devices Auto-Setup"
+                     },
+                     {
+                         "Name":  "Netlogon",
+                         "Status":  1,
+                         "StartType":  3,
+                         "DisplayName":  "Netlogon"
+                     },
+                     {
+                         "Name":  "Netman",
+                         "Status":  1,
+                         "StartType":  3,
+                         "DisplayName":  "Network Connections"
+                     },
+                     {
+                         "Name":  "netprofm",
+                         "Status":  4,
+                         "StartType":  3,
+                         "DisplayName":  "Network List Service"
+                     },
+                     {
+                         "Name":  "NetSetupSvc",
+                         "Status":  4,
+                         "StartType":  3,
+                         "DisplayName":  "Network Setup Service"
+                     },
+                     {
+                         "Name":  "NetTcpPortSharing",
+                         "Status":  1,
+                         "StartType":  4,
+                         "DisplayName":  "Net.Tcp Port Sharing Service"
+                     },
+                     {
+                         "Name":  "NgcCtnrSvc",
+                         "Status":  4,
+                         "StartType":  3,
+                         "DisplayName":  "Microsoft Passport Container"
+                     },
+                     {
+                         "Name":  "NgcSvc",
+                         "Status":  4,
+                         "StartType":  3,
+                         "DisplayName":  "Microsoft Passport"
+                     },
+                     {
+                         "Name":  "NlaSvc",
+                         "Status":  1,
+                         "StartType":  3,
+                         "DisplayName":  "Network Location Awareness"
+                     },
+                     {
+                         "Name":  "NPSMSvc_21e057f0",
+                         "Status":  4,
+                         "StartType":  3,
+                         "DisplayName":  "Now Playing Session Manager Service_21e057f0"
+                     },
+                     {
+                         "Name":  "nsi",
+                         "Status":  4,
+                         "StartType":  2,
+                         "DisplayName":  "Network Store Interface Service"
+                     },
+                     {
+                         "Name":  "nvagent",
+                         "Status":  4,
+                         "StartType":  3,
+                         "DisplayName":  "Network Virtualization Service"
+                     },
+                     {
+                         "Name":  "NVDisplay.ContainerLocalSystem",
+                         "Status":  4,
+                         "StartType":  2,
+                         "DisplayName":  "NVIDIA Display Container LS"
+                     },
+                     {
+                         "Name":  "OneDrive Updater Service",
+                         "Status":  1,
+                         "StartType":  3,
+                         "DisplayName":  "OneDrive Updater Service"
+                     },
+                     {
+                         "Name":  "OneSyncSvc_21e057f0",
+                         "Status":  4,
+                         "StartType":  2,
+                         "DisplayName":  "Sync Host_21e057f0"
+                     },
+                     {
+                         "Name":  "OptionsPlusUpdaterService",
+                         "Status":  4,
+                         "StartType":  2,
+                         "DisplayName":  "Logi Options+"
+                     },
+                     {
+                         "Name":  "ovpnhelper_service",
+                         "Status":  4,
+                         "StartType":  2,
+                         "DisplayName":  "OpenVPN Connect Helper Service"
+                     },
+                     {
+                         "Name":  "P9RdrService_21e057f0",
+                         "Status":  1,
+                         "StartType":  3,
+                         "DisplayName":  "P9RdrService_21e057f0"
+                     },
+                     {
+                         "Name":  "PcaSvc",
+                         "Status":  4,
+                         "StartType":  2,
+                         "DisplayName":  "Program Compatibility Assistant Service"
+                     },
+                     {
+                         "Name":  "PeerDistSvc",
+                         "Status":  1,
+                         "StartType":  3,
+                         "DisplayName":  "BranchCache"
+                     },
+                     {
+                         "Name":  "PenService_21e057f0",
+                         "Status":  1,
+                         "StartType":  3,
+                         "DisplayName":  "PenService_21e057f0"
+                     },
+                     {
+                         "Name":  "perceptionsimulation",
+                         "Status":  1,
+                         "StartType":  3,
+                         "DisplayName":  "Windows Perception Simulation Service"
+                     },
+                     {
+                         "Name":  "PerfHost",
+                         "Status":  1,
+                         "StartType":  3,
+                         "DisplayName":  "Performance Counter DLL Host"
+                     },
+                     {
+                         "Name":  "PhoneSvc",
+                         "Status":  1,
+                         "StartType":  3,
+                         "DisplayName":  "Phone Service"
+                     },
+                     {
+                         "Name":  "PimIndexMaintenanceSvc_21e057f0",
+                         "Status":  4,
+                         "StartType":  3,
+                         "DisplayName":  "Contact Data_21e057f0"
+                     },
+                     {
+                         "Name":  "pla",
+                         "Status":  1,
+                         "StartType":  3,
+                         "DisplayName":  "Performance Logs \u0026 Alerts"
+                     },
+                     {
+                         "Name":  "PlugPlay",
+                         "Status":  4,
+                         "StartType":  3,
+                         "DisplayName":  "Plug and Play"
+                     },
+                     {
+                         "Name":  "PolicyAgent",
+                         "Status":  4,
+                         "StartType":  3,
+                         "DisplayName":  "IPsec Policy Agent"
+                     },
+                     {
+                         "Name":  "Power",
+                         "Status":  4,
+                         "StartType":  2,
+                         "DisplayName":  "Power"
+                     },
+                     {
+                         "Name":  "PrintDeviceConfigurationService",
+                         "Status":  1,
+                         "StartType":  3,
+                         "DisplayName":  "Print Device Configuration Service"
+                     },
+                     {
+                         "Name":  "PrintNotify",
+                         "Status":  1,
+                         "StartType":  3,
+                         "DisplayName":  "Printer Extensions and Notifications"
+                     },
+                     {
+                         "Name":  "PrintScanBrokerService",
+                         "Status":  1,
+                         "StartType":  3,
+                         "DisplayName":  "PrintScanBrokerService"
+                     },
+                     {
+                         "Name":  "PrintWorkflowUserSvc_21e057f0",
+                         "Status":  1,
+                         "StartType":  3,
+                         "DisplayName":  "PrintWorkflow_21e057f0"
+                     },
+                     {
+                         "Name":  "ProfSvc",
+                         "Status":  4,
+                         "StartType":  2,
+                         "DisplayName":  "User Profile Service"
+                     },
+                     {
+                         "Name":  "PushToInstall",
+                         "Status":  1,
+                         "StartType":  3,
+                         "DisplayName":  "Windows PushToInstall Service"
+                     },
+                     {
+                         "Name":  "QWAVE",
+                         "Status":  1,
+                         "StartType":  3,
+                         "DisplayName":  "Quality Windows Audio Video Experience"
+                     },
+                     {
+                         "Name":  "RasAuto",
+                         "Status":  1,
+                         "StartType":  3,
+                         "DisplayName":  "Remote Access Auto Connection Manager"
+                     },
+                     {
+                         "Name":  "RasMan",
+                         "Status":  4,
+                         "StartType":  3,
+                         "DisplayName":  "Remote Access Connection Manager"
+                     },
+                     {
+                         "Name":  "refsdedupsvc",
+                         "Status":  1,
+                         "StartType":  3,
+                         "DisplayName":  "ReFS Dedup Service"
+                     },
+                     {
+                         "Name":  "RemoteAccess",
+                         "Status":  1,
+                         "StartType":  4,
+                         "DisplayName":  "Routing and Remote Access"
+                     },
+                     {
+                         "Name":  "RemoteRegistry",
+                         "Status":  1,
+                         "StartType":  4,
+                         "DisplayName":  "Remote Registry"
+                     },
+                     {
+                         "Name":  "RetailDemo",
+                         "Status":  1,
+                         "StartType":  3,
+                         "DisplayName":  "Retail Demo Service"
+                     },
+                     {
+                         "Name":  "RmSvc",
+                         "Status":  4,
+                         "StartType":  3,
+                         "DisplayName":  "Radio Management Service"
+                     },
+                     {
+                         "Name":  "RpcEptMapper",
+                         "Status":  4,
+                         "StartType":  2,
+                         "DisplayName":  "RPC Endpoint Mapper"
+                     },
+                     {
+                         "Name":  "RpcLocator",
+                         "Status":  1,
+                         "StartType":  3,
+                         "DisplayName":  "Remote Procedure Call (RPC) Locator"
+                     },
+                     {
+                         "Name":  "RpcSs",
+                         "Status":  4,
+                         "StartType":  2,
+                         "DisplayName":  "Remote Procedure Call (RPC)"
+                     },
+                     {
+                         "Name":  "RtkAudioUniversalService",
+                         "Status":  4,
+                         "StartType":  2,
+                         "DisplayName":  "Realtek Audio Universal Service"
+                     },
+                     {
+                         "Name":  "RtkBtManServ",
+                         "Status":  4,
+                         "StartType":  2,
+                         "DisplayName":  "Realtek Bluetooth Device Manager Service"
+                     },
+                     {
+                         "Name":  "RustDesk",
+                         "Status":  4,
+                         "StartType":  2,
+                         "DisplayName":  "RustDesk Service"
+                     },
+                     {
+                         "Name":  "SamSs",
+                         "Status":  4,
+                         "StartType":  2,
+                         "DisplayName":  "Security Accounts Manager"
+                     },
+                     {
+                         "Name":  "SCardSvr",
+                         "Status":  1,
+                         "StartType":  3,
+                         "DisplayName":  "Smart Card"
+                     },
+                     {
+                         "Name":  "ScDeviceEnum",
+                         "Status":  1,
+                         "StartType":  3,
+                         "DisplayName":  "Smart Card Device Enumeration Service"
+                     },
+                     {
+                         "Name":  "Schedule",
+                         "Status":  4,
+                         "StartType":  2,
+                         "DisplayName":  "Task Scheduler"
+                     },
+                     {
+                         "Name":  "SCPolicySvc",
+                         "Status":  1,
+                         "StartType":  3,
+                         "DisplayName":  "Smart Card Removal Policy"
+                     },
+                     {
+                         "Name":  "SDRSVC",
+                         "Status":  1,
+                         "StartType":  3,
+                         "DisplayName":  "Windows Backup"
+                     },
+                     {
+                         "Name":  "seclogon",
+                         "Status":  1,
+                         "StartType":  3,
+                         "DisplayName":  "Secondary Logon"
+                     },
+                     {
+                         "Name":  "SecurityHealthService",
+                         "Status":  4,
+                         "StartType":  3,
+                         "DisplayName":  "Windows Security Service"
+                     },
+                     {
+                         "Name":  "SEMgrSvc",
+                         "Status":  1,
+                         "StartType":  3,
+                         "DisplayName":  "Payments and NFC/SE Manager"
+                     },
+                     {
+                         "Name":  "SENS",
+                         "Status":  4,
+                         "StartType":  2,
+                         "DisplayName":  "System Event Notification Service"
+                     },
+                     {
+                         "Name":  "Sense",
+                         "Status":  1,
+                         "StartType":  3,
+                         "DisplayName":  "Windows Defender Advanced Threat Protection Service"
+                     },
+                     {
+                         "Name":  "SensorDataService",
+                         "Status":  1,
+                         "StartType":  3,
+                         "DisplayName":  "Sensor Data Service"
+                     },
+                     {
+                         "Name":  "SensorService",
+                         "Status":  4,
+                         "StartType":  3,
+                         "DisplayName":  "Sensor Service"
+                     },
+                     {
+                         "Name":  "SensrSvc",
+                         "Status":  1,
+                         "StartType":  3,
+                         "DisplayName":  "Sensor Monitoring Service"
+                     },
+                     {
+                         "Name":  "SessionEnv",
+                         "Status":  1,
+                         "StartType":  3,
+                         "DisplayName":  "Remote Desktop Configuration"
+                     },
+                     {
+                         "Name":  "SharedAccess",
+                         "Status":  4,
+                         "StartType":  3,
+                         "DisplayName":  "Internet Connection Sharing (ICS)"
+                     },
+                     {
+                         "Name":  "ShellHWDetection",
+                         "Status":  4,
+                         "StartType":  2,
+                         "DisplayName":  "Shell Hardware Detection"
+                     },
+                     {
+                         "Name":  "shpamsvc",
+                         "Status":  1,
+                         "StartType":  4,
+                         "DisplayName":  "Shared PC Account Manager"
+                     },
+                     {
+                         "Name":  "smphost",
+                         "Status":  1,
+                         "StartType":  3,
+                         "DisplayName":  "Microsoft Storage Spaces SMP"
+                     },
+                     {
+                         "Name":  "SmsRouter",
+                         "Status":  1,
+                         "StartType":  3,
+                         "DisplayName":  "Microsoft Windows SMS Router Service."
+                     },
+                     {
+                         "Name":  "SNMPTrap",
+                         "Status":  1,
+                         "StartType":  3,
+                         "DisplayName":  "SNMP Trap"
+                     },
+                     {
+                         "Name":  "Spooler",
+                         "Status":  4,
+                         "StartType":  2,
+                         "DisplayName":  "Print Spooler"
+                     },
+                     {
+                         "Name":  "sppsvc",
+                         "Status":  1,
+                         "StartType":  2,
+                         "DisplayName":  "Software Protection"
+                     },
+                     {
+                         "Name":  "SSDPSRV",
+                         "Status":  4,
+                         "StartType":  3,
+                         "DisplayName":  "SSDP Discovery"
+                     },
+                     {
+                         "Name":  "ssh-agent",
+                         "Status":  4,
+                         "StartType":  2,
+                         "DisplayName":  "OpenSSH Authentication Agent"
+                     },
+                     {
+                         "Name":  "sshd",
+                         "Status":  4,
+                         "StartType":  2,
+                         "DisplayName":  "OpenSSH SSH Server"
+                     },
+                     {
+                         "Name":  "SstpSvc",
+                         "Status":  4,
+                         "StartType":  3,
+                         "DisplayName":  "Secure Socket Tunneling Protocol Service"
+                     },
+                     {
+                         "Name":  "StateRepository",
+                         "Status":  4,
+                         "StartType":  2,
+                         "DisplayName":  "State Repository Service"
+                     },
+                     {
+                         "Name":  "StiSvc",
+                         "Status":  1,
+                         "StartType":  3,
+                         "DisplayName":  "Windows Image Acquisition (WIA)"
+                     },
+                     {
+                         "Name":  "StorSvc",
+                         "Status":  4,
+                         "StartType":  2,
+                         "DisplayName":  "Storage Service"
+                     },
+                     {
+                         "Name":  "svsvc",
+                         "Status":  1,
+                         "StartType":  3,
+                         "DisplayName":  "Spot Verifier"
+                     },
+                     {
+                         "Name":  "swprv",
+                         "Status":  1,
+                         "StartType":  3,
+                         "DisplayName":  "Microsoft Software Shadow Copy Provider"
+                     },
+                     {
+                         "Name":  "SysMain",
+                         "Status":  4,
+                         "StartType":  2,
+                         "DisplayName":  "SysMain"
+                     },
+                     {
+                         "Name":  "SystemEventsBroker",
+                         "Status":  4,
+                         "StartType":  2,
+                         "DisplayName":  "System Events Broker"
+                     },
+                     {
+                         "Name":  "TapiSrv",
+                         "Status":  1,
+                         "StartType":  3,
+                         "DisplayName":  "Telephony"
+                     },
+                     {
+                         "Name":  "TeamViewer",
+                         "Status":  4,
+                         "StartType":  2,
+                         "DisplayName":  "TeamViewer"
+                     },
+                     {
+                         "Name":  "TermService",
+                         "Status":  1,
+                         "StartType":  3,
+                         "DisplayName":  "Remote Desktop Services"
+                     },
+                     {
+                         "Name":  "TextInputManagementService",
+                         "Status":  4,
+                         "StartType":  2,
+                         "DisplayName":  "Text Input Management Service"
+                     },
+                     {
+                         "Name":  "Themes",
+                         "Status":  4,
+                         "StartType":  2,
+                         "DisplayName":  "Themes"
+                     },
+                     {
+                         "Name":  "TieringEngineService",
+                         "Status":  1,
+                         "StartType":  3,
+                         "DisplayName":  "Storage Tiers Management"
+                     },
+                     {
+                         "Name":  "TimeBrokerSvc",
+                         "Status":  4,
+                         "StartType":  3,
+                         "DisplayName":  "Time Broker"
+                     },
+                     {
+                         "Name":  "TokenBroker",
+                         "Status":  4,
+                         "StartType":  3,
+                         "DisplayName":  "Web Account Manager"
+                     },
+                     {
+                         "Name":  "TrkWks",
+                         "Status":  4,
+                         "StartType":  2,
+                         "DisplayName":  "Distributed Link Tracking Client"
+                     },
+                     {
+                         "Name":  "TroubleshootingSvc",
+                         "Status":  1,
+                         "StartType":  3,
+                         "DisplayName":  "Recommended Troubleshooting Service"
+                     },
+                     {
+                         "Name":  "TrustedInstaller",
+                         "Status":  4,
+                         "StartType":  3,
+                         "DisplayName":  "Windows Modules Installer"
+                     },
+                     {
+                         "Name":  "tzautoupdate",
+                         "Status":  1,
+                         "StartType":  4,
+                         "DisplayName":  "Auto Time Zone Updater"
+                     },
+                     {
+                         "Name":  "UdkUserSvc_21e057f0",
+                         "Status":  4,
+                         "StartType":  3,
+                         "DisplayName":  "Udk User Service_21e057f0"
+                     },
+                     {
+                         "Name":  "UevAgentService",
+                         "Status":  1,
+                         "StartType":  4,
+                         "DisplayName":  "User Experience Virtualization Service"
+                     },
+                     {
+                         "Name":  "UltraViewService",
+                         "Status":  4,
+                         "StartType":  2,
+                         "DisplayName":  "UltraViewer Service"
+                     },
+                     {
+                         "Name":  "UmRdpService",
+                         "Status":  1,
+                         "StartType":  3,
+                         "DisplayName":  "Remote Desktop Services UserMode Port Redirector"
+                     },
+                     {
+                         "Name":  "UnistoreSvc_21e057f0",
+                         "Status":  4,
+                         "StartType":  3,
+                         "DisplayName":  "User Data Storage_21e057f0"
+                     },
+                     {
+                         "Name":  "upnphost",
+                         "Status":  1,
+                         "StartType":  3,
+                         "DisplayName":  "UPnP Device Host"
+                     },
+                     {
+                         "Name":  "UserDataSvc_21e057f0",
+                         "Status":  4,
+                         "StartType":  3,
+                         "DisplayName":  "User Data Access_21e057f0"
+                     },
+                     {
+                         "Name":  "UserManager",
+                         "Status":  4,
+                         "StartType":  2,
+                         "DisplayName":  "User Manager"
+                     },
+                     {
+                         "Name":  "UsoSvc",
+                         "Status":  4,
+                         "StartType":  2,
+                         "DisplayName":  "Update Orchestrator Service"
+                     },
+                     {
+                         "Name":  "VaultSvc",
+                         "Status":  4,
+                         "StartType":  3,
+                         "DisplayName":  "Credential Manager"
+                     },
+                     {
+                         "Name":  "vds",
+                         "Status":  1,
+                         "StartType":  3,
+                         "DisplayName":  "Virtual Disk"
+                     },
+                     {
+                         "Name":  "vmcompute",
+                         "Status":  4,
+                         "StartType":  3,
+                         "DisplayName":  "Hyper-V Host Compute Service"
+                     },
+                     {
+                         "Name":  "vmicguestinterface",
+                         "Status":  1,
+                         "StartType":  3,
+                         "DisplayName":  "Hyper-V Guest Service Interface"
+                     },
+                     {
+                         "Name":  "vmicheartbeat",
+                         "Status":  1,
+                         "StartType":  3,
+                         "DisplayName":  "Hyper-V Heartbeat Service"
+                     },
+                     {
+                         "Name":  "vmickvpexchange",
+                         "Status":  1,
+                         "StartType":  3,
+                         "DisplayName":  "Hyper-V Data Exchange Service"
+                     },
+                     {
+                         "Name":  "vmicrdv",
+                         "Status":  1,
+                         "StartType":  3,
+                         "DisplayName":  "Hyper-V Remote Desktop Virtualization Service"
+                     },
+                     {
+                         "Name":  "vmicshutdown",
+                         "Status":  1,
+                         "StartType":  3,
+                         "DisplayName":  "Hyper-V Guest Shutdown Service"
+                     },
+                     {
+                         "Name":  "vmictimesync",
+                         "Status":  1,
+                         "StartType":  3,
+                         "DisplayName":  "Hyper-V Time Synchronization Service"
+                     },
+                     {
+                         "Name":  "vmicvmsession",
+                         "Status":  1,
+                         "StartType":  3,
+                         "DisplayName":  "Hyper-V PowerShell Direct Service"
+                     },
+                     {
+                         "Name":  "vmicvss",
+                         "Status":  1,
+                         "StartType":  3,
+                         "DisplayName":  "Hyper-V Volume Shadow Copy Requestor"
+                     },
+                     {
+                         "Name":  "vmms",
+                         "Status":  4,
+                         "StartType":  2,
+                         "DisplayName":  "Hyper-V Virtual Machine Management"
+                     },
+                     {
+                         "Name":  "VSS",
+                         "Status":  1,
+                         "StartType":  3,
+                         "DisplayName":  "Volume Shadow Copy"
+                     },
+                     {
+                         "Name":  "W32Time",
+                         "Status":  1,
+                         "StartType":  3,
+                         "DisplayName":  "Windows Time"
+                     },
+                     {
+                         "Name":  "WaaSMedicSvc",
+                         "Status":  1,
+                         "StartType":  3,
+                         "DisplayName":  "WaaSMedicSvc"
+                     },
+                     {
+                         "Name":  "WalletService",
+                         "Status":  1,
+                         "StartType":  3,
+                         "DisplayName":  "WalletService"
+                     },
+                     {
+                         "Name":  "WarpJITSvc",
+                         "Status":  1,
+                         "StartType":  3,
+                         "DisplayName":  "Warp JIT Service"
+                     },
+                     {
+                         "Name":  "wbengine",
+                         "Status":  1,
+                         "StartType":  3,
+                         "DisplayName":  "Block Level Backup Engine Service"
+                     },
+                     {
+                         "Name":  "WbioSrvc",
+                         "Status":  1,
+                         "StartType":  3,
+                         "DisplayName":  "Windows Biometric Service"
+                     },
+                     {
+                         "Name":  "Wcmsvc",
+                         "Status":  4,
+                         "StartType":  2,
+                         "DisplayName":  "Windows Connection Manager"
+                     },
+                     {
+                         "Name":  "wcncsvc",
+                         "Status":  1,
+                         "StartType":  3,
+                         "DisplayName":  "Windows Connect Now - Config Registrar"
+                     },
+                     {
+                         "Name":  "WdiServiceHost",
+                         "Status":  4,
+                         "StartType":  3,
+                         "DisplayName":  "Diagnostic Service Host"
+                     },
+                     {
+                         "Name":  "WdiSystemHost",
+                         "Status":  1,
+                         "StartType":  3,
+                         "DisplayName":  "Diagnostic System Host"
+                     },
+                     {
+                         "Name":  "WdNisSvc",
+                         "Status":  4,
+                         "StartType":  3,
+                         "DisplayName":  "Microsoft Defender Antivirus Network Inspection Service"
+                     },
+                     {
+                         "Name":  "WebClient",
+                         "Status":  1,
+                         "StartType":  3,
+                         "DisplayName":  "WebClient"
+                     },
+                     {
+                         "Name":  "webthreatdefsvc",
+                         "Status":  4,
+                         "StartType":  3,
+                         "DisplayName":  "Web Threat Defense Service"
+                     },
+                     {
+                         "Name":  "webthreatdefusersvc_21e057f0",
+                         "Status":  4,
+                         "StartType":  2,
+                         "DisplayName":  "Web Threat Defense User Service_21e057f0"
+                     },
+                     {
+                         "Name":  "Wecsvc",
+                         "Status":  1,
+                         "StartType":  3,
+                         "DisplayName":  "Windows Event Collector"
+                     },
+                     {
+                         "Name":  "WEPHOSTSVC",
+                         "Status":  1,
+                         "StartType":  3,
+                         "DisplayName":  "Windows Encryption Provider Host Service"
+                     },
+                     {
+                         "Name":  "wercplsupport",
+                         "Status":  1,
+                         "StartType":  3,
+                         "DisplayName":  "Problem Reports Control Panel Support"
+                     },
+                     {
+                         "Name":  "WerSvc",
+                         "Status":  1,
+                         "StartType":  3,
+                         "DisplayName":  "Windows Error Reporting Service"
+                     },
+                     {
+                         "Name":  "WFDSConMgrSvc",
+                         "Status":  1,
+                         "StartType":  3,
+                         "DisplayName":  "Wi-Fi Direct Services Connection Manager Service"
+                     },
+                     {
+                         "Name":  "WiaRpc",
+                         "Status":  1,
+                         "StartType":  3,
+                         "DisplayName":  "Still Image Acquisition Events"
+                     },
+                     {
+                         "Name":  "WinDefend",
+                         "Status":  4,
+                         "StartType":  2,
+                         "DisplayName":  "Microsoft Defender Antivirus Service"
+                     },
+                     {
+                         "Name":  "WinHttpAutoProxySvc",
+                         "Status":  4,
+                         "StartType":  3,
+                         "DisplayName":  "WinHTTP Web Proxy Auto-Discovery Service"
+                     },
+                     {
+                         "Name":  "Winmgmt",
+                         "Status":  4,
+                         "StartType":  2,
+                         "DisplayName":  "Windows Management Instrumentation"
+                     },
+                     {
+                         "Name":  "WinRM",
+                         "Status":  1,
+                         "StartType":  4,
+                         "DisplayName":  "Windows Remote Management (WS-Management)"
+                     },
+                     {
+                         "Name":  "wisvc",
+                         "Status":  1,
+                         "StartType":  3,
+                         "DisplayName":  "Windows Insider Service"
+                     },
+                     {
+                         "Name":  "WlanSvc",
+                         "Status":  4,
+                         "StartType":  2,
+                         "DisplayName":  "WLAN AutoConfig"
+                     },
+                     {
+                         "Name":  "wlidsvc",
+                         "Status":  1,
+                         "StartType":  3,
+                         "DisplayName":  "Microsoft Account Sign-in Assistant"
+                     },
+                     {
+                         "Name":  "wlpasvc",
+                         "Status":  1,
+                         "StartType":  3,
+                         "DisplayName":  "Local Profile Assistant Service"
+                     },
+                     {
+                         "Name":  "WManSvc",
+                         "Status":  1,
+                         "StartType":  3,
+                         "DisplayName":  "Windows Management Service"
+                     },
+                     {
+                         "Name":  "wmiApSrv",
+                         "Status":  1,
+                         "StartType":  3,
+                         "DisplayName":  "WMI Performance Adapter"
+                     },
+                     {
+                         "Name":  "WMPNetworkSvc",
+                         "Status":  1,
+                         "StartType":  3,
+                         "DisplayName":  "Windows Media Player Network Sharing Service"
+                     },
+                     {
+                         "Name":  "workfolderssvc",
+                         "Status":  1,
+                         "StartType":  3,
+                         "DisplayName":  "Work Folders"
+                     },
+                     {
+                         "Name":  "WpcMonSvc",
+                         "Status":  1,
+                         "StartType":  3,
+                         "DisplayName":  "Parental Controls"
+                     },
+                     {
+                         "Name":  "WPDBusEnum",
+                         "Status":  1,
+                         "StartType":  3,
+                         "DisplayName":  "Portable Device Enumerator Service"
+                     },
+                     {
+                         "Name":  "WpnService",
+                         "Status":  4,
+                         "StartType":  2,
+                         "DisplayName":  "Windows Push Notifications System Service"
+                     },
+                     {
+                         "Name":  "WpnUserService_21e057f0",
+                         "Status":  4,
+                         "StartType":  2,
+                         "DisplayName":  "Windows Push Notifications User Service_21e057f0"
+                     },
+                     {
+                         "Name":  "WSAIFabricSvc",
+                         "Status":  4,
+                         "StartType":  2,
+                         "DisplayName":  "WSAIFabricSvc"
+                     },
+                     {
+                         "Name":  "wscsvc",
+                         "Status":  4,
+                         "StartType":  2,
+                         "DisplayName":  "Security Center"
+                     },
+                     {
+                         "Name":  "WSearch",
+                         "Status":  4,
+                         "StartType":  2,
+                         "DisplayName":  "Windows Search"
+                     },
+                     {
+                         "Name":  "WslInstaller",
+                         "Status":  1,
+                         "StartType":  2,
+                         "DisplayName":  "Windows Subsystem for Linux"
+                     },
+                     {
+                         "Name":  "WSLService",
+                         "Status":  4,
+                         "StartType":  2,
+                         "DisplayName":  "WSL Service"
+                     },
+                     {
+                         "Name":  "wuauserv",
+                         "Status":  1,
+                         "StartType":  3,
+                         "DisplayName":  "Windows Update"
+                     },
+                     {
+                         "Name":  "WwanSvc",
+                         "Status":  1,
+                         "StartType":  3,
+                         "DisplayName":  "WWAN AutoConfig"
+                     },
+                     {
+                         "Name":  "XblAuthManager",
+                         "Status":  1,
+                         "StartType":  3,
+                         "DisplayName":  "Xbox Live Auth Manager"
+                     },
+                     {
+                         "Name":  "XblGameSave",
+                         "Status":  1,
+                         "StartType":  3,
+                         "DisplayName":  "Xbox Live Game Save"
+                     },
+                     {
+                         "Name":  "XboxGipSvc",
+                         "Status":  1,
+                         "StartType":  3,
+                         "DisplayName":  "Xbox Accessory Management Service"
+                     },
+                     {
+                         "Name":  "XboxNetApiSvc",
+                         "Status":  1,
+                         "StartType":  3,
+                         "DisplayName":  "Xbox Live Networking Service"
+                     },
+                     {
+                         "Name":  "ZTHELPER",
+                         "Status":  1,
+                         "StartType":  3,
+                         "DisplayName":  "ZTHELPER"
+                     }
+                 ],
+    "InstalledApps":  [
+                          {
+                              "DisplayName":  "1527c705-839a-4832-9118-54d4Bd6a0c89",
+                              "DisplayVersion":  "10.0.19640.1000",
+                              "Publisher":  "CN=Microsoft Windows, O=Microsoft Corporation, L=Redmond, S=Washington, C=US"
+                          },
+                          {
+                              "DisplayName":  "5319275A.WhatsAppDesktop",
+                              "DisplayVersion":  "2.2526.2.0",
+                              "Publisher":  "CN=24803D75-212C-471A-BC57-9EF86AB91435"
+                          },
+                          {
+                              "DisplayName":  "7-Zip 24.09 (x64)",
+                              "DisplayVersion":  "24.09",
+                              "Publisher":  "Igor Pavlov",
+                              "InstallDate":  null
+                          },
+                          {
+                              "DisplayName":  "8741Veirbel.Fixyfier",
+                              "DisplayVersion":  "3.1.2.0",
+                              "Publisher":  "CN=A7B4288A-67FD-426A-88F3-46AB173502D0"
+                          },
+                          {
+                              "DisplayName":  "Adobe Acrobat (64-bit)",
+                              "DisplayVersion":  "25.001.20531",
+                              "Publisher":  "Adobe",
+                              "InstallDate":  "20250612"
+                          },
+                          {
+                              "DisplayName":  "Adobe Refresh Manager",
+                              "DisplayVersion":  "1.8.0",
+                              "Publisher":  "Adobe Systems Incorporated",
+                              "InstallDate":  "20250416"
+                          },
+                          {
+                              "DisplayName":  "Angry IP Scanner",
+                              "DisplayVersion":  "3.9.1",
+                              "Publisher":  "Angry IP Scanner",
+                              "InstallDate":  null
+                          },
+                          {
+                              "DisplayName":  "c5e2524a-ea46-4f67-841f-6a9465d9d515",
+                              "DisplayVersion":  "10.0.26100.1",
+                              "Publisher":  "CN=Microsoft Windows, O=Microsoft Corporation, L=Redmond, S=Washington, C=US"
+                          },
+                          {
+                              "DisplayName":  "Clipchamp.Clipchamp",
+                              "DisplayVersion":  "4.3.10020.0",
+                              "Publisher":  "CN=33F0F141-36F3-4EC2-A77D-51B53D0BA0E4"
+                          },
+                          {
+                              "DisplayName":  "CrystalDiskInfo 9.7.0",
+                              "DisplayVersion":  "9.7.0",
+                              "Publisher":  "Crystal Dew World",
+                              "InstallDate":  "20250620"
+                          },
+                          {
+                              "DisplayName":  "Docker Desktop",
+                              "DisplayVersion":  "4.42.1",
+                              "Publisher":  "Docker Inc.",
+                              "InstallDate":  null
+                          },
+                          {
+                              "DisplayName":  "DolbyLaboratories.DolbyAudio",
+                              "DisplayVersion":  "3.20602.609.0",
+                              "Publisher":  "CN=58D26209-1D57-482C-B403-B655571B5C7B"
+                          },
+                          {
+                              "DisplayName":  "E2A4F912-2574-4A75-9BB0-0D023378592B",
+                              "DisplayVersion":  "10.0.19640.1000",
+                              "Publisher":  "CN=Microsoft Windows, O=Microsoft Corporation, L=Redmond, S=Washington, C=US"
+                          },
+                          {
+                              "DisplayName":  "Everything 1.4.1.1026 (x86)",
+                              "DisplayVersion":  "1.4.1.1026",
+                              "Publisher":  "voidtools",
+                              "InstallDate":  null
+                          },
+                          {
+                              "DisplayName":  "F46D4000-FD22-4DB4-AC8E-4E1DDDE828FE",
+                              "DisplayVersion":  "10.0.26100.1",
+                              "Publisher":  "CN=Microsoft Windows, O=Microsoft Corporation, L=Redmond, S=Washington, C=US"
+                          },
+                          {
+                              "DisplayName":  "Git",
+                              "DisplayVersion":  "2.50.0.2",
+                              "Publisher":  "The Git Development Community",
+                              "InstallDate":  "20250702"
+                          },
+                          {
+                              "DisplayName":  "GOG.com Heroes of Might and Magic 3",
+                              "DisplayVersion":  null,
+                              "Publisher":  null,
+                              "InstallDate":  null
+                          },
+                          {
+                              "DisplayName":  "Google Chrome",
+                              "DisplayVersion":  "138.0.7204.97",
+                              "Publisher":  "Google LLC",
+                              "InstallDate":  "20250702"
+                          },
+                          {
+                              "DisplayName":  "Heroes of Might and Magic 3 Complete",
+                              "DisplayVersion":  "2.0.0.16",
+                              "Publisher":  "GOG.com",
+                              "InstallDate":  "20250102"
+                          },
+                          {
+                              "DisplayName":  "Heroes of Might and Magic® III: Horn of the Abyss",
+                              "DisplayVersion":  "1.7.2",
+                              "Publisher":  "HotA Crew",
+                              "InstallDate":  "20250102"
+                          },
+                          {
+                              "DisplayName":  "Logi Options+",
+                              "DisplayVersion":  "1.92.731496",
+                              "Publisher":  "Logitech",
+                              "InstallDate":  null
+                          },
+                          {
+                              "DisplayName":  "Logi Plugin Service",
+                              "DisplayVersion":  "6.1.3.22547",
+                              "Publisher":  "Logitech",
+                              "InstallDate":  "20250620"
+                          },
+                          {
+                              "DisplayName":  "Logi RightSightForWebcams 1.1.168",
+                              "DisplayVersion":  "1.1.168.0",
+                              "Publisher":  "Logitech",
+                              "InstallDate":  "20250620"
+                          },
+                          {
+                              "DisplayName":  "Microsoft 365 Apps for enterprise - en-us",
+                              "DisplayVersion":  "16.0.18827.20176",
+                              "Publisher":  "Microsoft Corporation",
+                              "InstallDate":  null
+                          },
+                          {
+                              "DisplayName":  "Microsoft Edge",
+                              "DisplayVersion":  "138.0.3351.55",
+                              "Publisher":  "Microsoft Corporation",
+                              "InstallDate":  "20250628"
+                          },
+                          {
+                              "DisplayName":  "Microsoft Edge WebView2 Runtime",
+                              "DisplayVersion":  "137.0.3296.93",
+                              "Publisher":  "Microsoft Corporation",
+                              "InstallDate":  "20250621"
+                          },
+                          {
+                              "DisplayName":  "Microsoft OneDrive",
+                              "DisplayVersion":  "25.105.0601.0002",
+                              "Publisher":  "Microsoft Corporation",
+                              "InstallDate":  null
+                          },
+                          {
+                              "DisplayName":  "Microsoft Update Health Tools",
+                              "DisplayVersion":  "5.72.0.0",
+                              "Publisher":  "Microsoft Corporation",
+                              "InstallDate":  "20240818"
+                          },
+                          {
+                              "DisplayName":  "Microsoft Visual C++ 2010  x64 Redistributable - 10.0.40219",
+                              "DisplayVersion":  "10.0.40219",
+                              "Publisher":  "Microsoft Corporation",
+                              "InstallDate":  "20240921"
+                          },
+                          {
+                              "DisplayName":  "Microsoft Visual C++ 2010  x86 Redistributable - 10.0.40219",
+                              "DisplayVersion":  "10.0.40219",
+                              "Publisher":  "Microsoft Corporation",
+                              "InstallDate":  "20240921"
+                          },
+                          {
+                              "DisplayName":  "Microsoft Visual C++ 2013 Redistributable (x64) - 12.0.40664",
+                              "DisplayVersion":  "12.0.40664.0",
+                              "Publisher":  "Microsoft Corporation",
+                              "InstallDate":  null
+                          },
+                          {
+                              "DisplayName":  "Microsoft Visual C++ 2013 Redistributable (x86) - 12.0.40664",
+                              "DisplayVersion":  "12.0.40664.0",
+                              "Publisher":  "Microsoft Corporation",
+                              "InstallDate":  null
+                          },
+                          {
+                              "DisplayName":  "Microsoft Visual C++ 2013 x64 Additional Runtime - 12.0.40664",
+                              "DisplayVersion":  "12.0.40664",
+                              "Publisher":  "Microsoft Corporation",
+                              "InstallDate":  "20240922"
+                          },
+                          {
+                              "DisplayName":  "Microsoft Visual C++ 2013 x64 Minimum Runtime - 12.0.40664",
+                              "DisplayVersion":  "12.0.40664",
+                              "Publisher":  "Microsoft Corporation",
+                              "InstallDate":  "20240922"
+                          },
+                          {
+                              "DisplayName":  "Microsoft Visual C++ 2013 x86 Additional Runtime - 12.0.40664",
+                              "DisplayVersion":  "12.0.40664",
+                              "Publisher":  "Microsoft Corporation",
+                              "InstallDate":  "20240922"
+                          },
+                          {
+                              "DisplayName":  "Microsoft Visual C++ 2013 x86 Minimum Runtime - 12.0.40664",
+                              "DisplayVersion":  "12.0.40664",
+                              "Publisher":  "Microsoft Corporation",
+                              "InstallDate":  "20240922"
+                          },
+                          {
+                              "DisplayName":  "Microsoft Visual C++ 2015-2022 Redistributable (x64) - 14.44.35211",
+                              "DisplayVersion":  "14.44.35211.0",
+                              "Publisher":  "Microsoft Corporation",
+                              "InstallDate":  null
+                          },
+                          {
+                              "DisplayName":  "Microsoft Visual C++ 2022 X64 Additional Runtime - 14.44.35211",
+                              "DisplayVersion":  "14.44.35211",
+                              "Publisher":  "Microsoft Corporation",
+                              "InstallDate":  "20250620"
+                          },
+                          {
+                              "DisplayName":  "Microsoft Visual C++ 2022 X64 Minimum Runtime - 14.44.35211",
+                              "DisplayVersion":  "14.44.35211",
+                              "Publisher":  "Microsoft Corporation",
+                              "InstallDate":  "20250620"
+                          },
+                          {
+                              "DisplayName":  "Microsoft.AAD.BrokerPlugin",
+                              "DisplayVersion":  "1000.19580.1000.2",
+                              "Publisher":  "CN=Microsoft Windows, O=Microsoft Corporation, L=Redmond, S=Washington, C=US"
+                          },
+                          {
+                              "DisplayName":  "Microsoft.AccountsControl",
+                              "DisplayVersion":  "10.0.26100.1",
+                              "Publisher":  "CN=Microsoft Windows, O=Microsoft Corporation, L=Redmond, S=Washington, C=US"
+                          },
+                          {
+                              "DisplayName":  "Microsoft.ApplicationCompatibilityEnhancements",
+                              "DisplayVersion":  "1.2411.16.0",
+                              "Publisher":  "CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US"
+                          },
+                          {
+                              "DisplayName":  "Microsoft.AsyncTextService",
+                              "DisplayVersion":  "10.0.26100.1",
+                              "Publisher":  "CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US"
+                          },
+                          {
+                              "DisplayName":  "Microsoft.AV1VideoExtension",
+                              "DisplayVersion":  "1.3.20.0",
+                              "Publisher":  "CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US"
+                          },
+                          {
+                              "DisplayName":  "Microsoft.AVCEncoderVideoExtension",
+                              "DisplayVersion":  "1.1.17.0",
+                              "Publisher":  "CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US"
+                          },
+                          {
+                              "DisplayName":  "Microsoft.BingSearch",
+                              "DisplayVersion":  "1.1.40.0",
+                              "Publisher":  "CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US"
+                          },
+                          {
+                              "DisplayName":  "Microsoft.BioEnrollment",
+                              "DisplayVersion":  "10.0.19587.1000",
+                              "Publisher":  "CN=Microsoft Windows, O=Microsoft Corporation, L=Redmond, S=Washington, C=US"
+                          },
+                          {
+                              "DisplayName":  "Microsoft.CommandPalette",
+                              "DisplayVersion":  "0.3.1822.0",
+                              "Publisher":  "CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US"
+                          },
+                          {
+                              "DisplayName":  "Microsoft.CredDialogHost",
+                              "DisplayVersion":  "10.0.19595.1001",
+                              "Publisher":  "CN=Microsoft Windows, O=Microsoft Corporation, L=Redmond, S=Washington, C=US"
+                          },
+                          {
+                              "DisplayName":  "Microsoft.DesktopAppInstaller",
+                              "DisplayVersion":  "1.26.400.0",
+                              "Publisher":  "CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US"
+                          },
+                          {
+                              "DisplayName":  "Microsoft.ECApp",
+                              "DisplayVersion":  "10.0.26100.4061",
+                              "Publisher":  "CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US"
+                          },
+                          {
+                              "DisplayName":  "Microsoft.Edge.GameAssist",
+                              "DisplayVersion":  "1.0.3336.0",
+                              "Publisher":  "CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US"
+                          },
+                          {
+                              "DisplayName":  "Microsoft.GamingApp",
+                              "DisplayVersion":  "2506.1001.20.0",
+                              "Publisher":  "CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US"
+                          },
+                          {
+                              "DisplayName":  "Microsoft.HEIFImageExtension",
+                              "DisplayVersion":  "1.2.20.0",
+                              "Publisher":  "CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US"
+                          },
+                          {
+                              "DisplayName":  "Microsoft.HEVCVideoExtension",
+                              "DisplayVersion":  "2.4.13.0",
+                              "Publisher":  "CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US"
+                          },
+                          {
+                              "DisplayName":  "Microsoft.Ink.Handwriting.Main.en-US.1.0.1",
+                              "DisplayVersion":  "0.850.1840.0",
+                              "Publisher":  "CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US"
+                          },
+                          {
+                              "DisplayName":  "Microsoft.LockApp",
+                              "DisplayVersion":  "10.0.26100.4202",
+                              "Publisher":  "CN=Microsoft Windows, O=Microsoft Corporation, L=Redmond, S=Washington, C=US"
+                          },
+                          {
+                              "DisplayName":  "Microsoft.MicrosoftEdge.Stable",
+                              "DisplayVersion":  "138.0.3351.55",
+                              "Publisher":  "CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US"
+                          },
+                          {
+                              "DisplayName":  "Microsoft.MicrosoftEdgeDevToolsClient",
+                              "DisplayVersion":  "1000.25128.1000.0",
+                              "Publisher":  "CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US"
+                          },
+                          {
+                              "DisplayName":  "Microsoft.MicrosoftLoop",
+                              "DisplayVersion":  "1.0.1.0",
+                              "Publisher":  "CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US"
+                          },
+                          {
+                              "DisplayName":  "Microsoft.MicrosoftStickyNotes",
+                              "DisplayVersion":  "4.0.6104.0",
+                              "Publisher":  "CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US"
+                          },
+                          {
+                              "DisplayName":  "Microsoft.MPEG2VideoExtension",
+                              "DisplayVersion":  "1.2.10.0",
+                              "Publisher":  "CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US"
+                          },
+                          {
+                              "DisplayName":  "Microsoft.OfficePushNotificationUtility",
+                              "DisplayVersion":  "16.0.18827.20150",
+                              "Publisher":  "CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US"
+                          },
+                          {
+                              "DisplayName":  "Microsoft.OneDriveSync",
+                              "DisplayVersion":  "25105.601.2.0",
+                              "Publisher":  "CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US"
+                          },
+                          {
+                              "DisplayName":  "Microsoft.OutlookForWindows",
+                              "DisplayVersion":  "1.2025.219.400",
+                              "Publisher":  "CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US"
+                          },
+                          {
+                              "DisplayName":  "Microsoft.Paint",
+                              "DisplayVersion":  "11.2504.531.0",
+                              "Publisher":  "CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US"
+                          },
+                          {
+                              "DisplayName":  "Microsoft.PowerAutomateDesktop",
+                              "DisplayVersion":  "1.0.1420.0",
+                              "Publisher":  "CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US"
+                          },
+                          {
+                              "DisplayName":  "Microsoft.PowerToys.FileLocksmithContextMenu",
+                              "DisplayVersion":  "0.92.0.0",
+                              "Publisher":  "CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US"
+                          },
+                          {
+                              "DisplayName":  "Microsoft.PowerToys.ImageResizerContextMenu",
+                              "DisplayVersion":  "0.92.0.0",
+                              "Publisher":  "CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US"
+                          },
+                          {
+                              "DisplayName":  "Microsoft.PowerToys.PowerRenameContextMenu",
+                              "DisplayVersion":  "0.92.0.0",
+                              "Publisher":  "CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US"
+                          },
+                          {
+                              "DisplayName":  "Microsoft.RawImageExtension",
+                              "DisplayVersion":  "2.5.5.0",
+                              "Publisher":  "CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US"
+                          },
+                          {
+                              "DisplayName":  "Microsoft.ScreenSketch",
+                              "DisplayVersion":  "11.2504.42.0",
+                              "Publisher":  "CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US"
+                          },
+                          {
+                              "DisplayName":  "Microsoft.SecHealthUI",
+                              "DisplayVersion":  "1000.27840.1000.0",
+                              "Publisher":  "CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US"
+                          },
+                          {
+                              "DisplayName":  "Microsoft.StartExperiencesApp",
+                              "DisplayVersion":  "1.51.3.0",
+                              "Publisher":  "CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US"
+                          },
+                          {
+                              "DisplayName":  "Microsoft.StorePurchaseApp",
+                              "DisplayVersion":  "22505.1401.0.0",
+                              "Publisher":  "CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US"
+                          },
+                          {
+                              "DisplayName":  "Microsoft.Todos",
+                              "DisplayVersion":  "0.148.3611.0",
+                              "Publisher":  "CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US"
+                          },
+                          {
+                              "DisplayName":  "Microsoft.VP9VideoExtensions",
+                              "DisplayVersion":  "1.2.6.0",
+                              "Publisher":  "CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US"
+                          },
+                          {
+                              "DisplayName":  "Microsoft.WebMediaExtensions",
+                              "DisplayVersion":  "1.2.14.0",
+                              "Publisher":  "CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US"
+                          },
+                          {
+                              "DisplayName":  "Microsoft.WebpImageExtension",
+                              "DisplayVersion":  "1.2.10.0",
+                              "Publisher":  "CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US"
+                          },
+                          {
+                              "DisplayName":  "Microsoft.WidgetsPlatformRuntime",
+                              "DisplayVersion":  "1.6.9.0",
+                              "Publisher":  "CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US"
+                          },
+                          {
+                              "DisplayName":  "Microsoft.Win32WebViewHost",
+                              "DisplayVersion":  "10.0.26100.1",
+                              "Publisher":  "CN=Microsoft Windows, O=Microsoft Corporation, L=Redmond, S=Washington, C=US"
+                          },
+                          {
+                              "DisplayName":  "Microsoft.Windows.Apprep.ChxApp",
+                              "DisplayVersion":  "1000.25128.1000.0",
+                              "Publisher":  "CN=Microsoft Windows, O=Microsoft Corporation, L=Redmond, S=Washington, C=US"
+                          },
+                          {
+                              "DisplayName":  "Microsoft.Windows.AssignedAccessLockApp",
+                              "DisplayVersion":  "1000.25128.1000.0",
+                              "Publisher":  "CN=Microsoft Windows, O=Microsoft Corporation, L=Redmond, S=Washington, C=US"
+                          },
+                          {
+                              "DisplayName":  "Microsoft.Windows.CapturePicker",
+                              "DisplayVersion":  "10.0.19580.1000",
+                              "Publisher":  "CN=Microsoft Windows, O=Microsoft Corporation, L=Redmond, S=Washington, C=US"
+                          },
+                          {
+                              "DisplayName":  "Microsoft.Windows.CloudExperienceHost",
+                              "DisplayVersion":  "10.0.26100.1",
+                              "Publisher":  "CN=Microsoft Windows, O=Microsoft Corporation, L=Redmond, S=Washington, C=US"
+                          },
+                          {
+                              "DisplayName":  "Microsoft.Windows.ContentDeliveryManager",
+                              "DisplayVersion":  "10.0.26100.1",
+                              "Publisher":  "CN=Microsoft Windows, O=Microsoft Corporation, L=Redmond, S=Washington, C=US"
+                          },
+                          {
+                              "DisplayName":  "Microsoft.Windows.DevHome",
+                              "DisplayVersion":  "0.2101.858.0",
+                              "Publisher":  "CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US"
+                          },
+                          {
+                              "DisplayName":  "Microsoft.Windows.NarratorQuickStart",
+                              "DisplayVersion":  "10.0.26100.1",
+                              "Publisher":  "CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US"
+                          },
+                          {
+                              "DisplayName":  "Microsoft.Windows.OOBENetworkCaptivePortal",
+                              "DisplayVersion":  "10.0.26100.1000",
+                              "Publisher":  "CN=Microsoft Windows, O=Microsoft Corporation, L=Redmond, S=Washington, C=US"
+                          },
+                          {
+                              "DisplayName":  "Microsoft.Windows.OOBENetworkConnectionFlow",
+                              "DisplayVersion":  "10.0.21302.1000",
+                              "Publisher":  "CN=Microsoft Windows, O=Microsoft Corporation, L=Redmond, S=Washington, C=US"
+                          },
+                          {
+                              "DisplayName":  "Microsoft.Windows.ParentalControls",
+                              "DisplayVersion":  "1000.25128.1000.0",
+                              "Publisher":  "CN=Microsoft Windows, O=Microsoft Corporation, L=Redmond, S=Washington, C=US"
+                          },
+                          {
+                              "DisplayName":  "Microsoft.Windows.PeopleExperienceHost",
+                              "DisplayVersion":  "10.0.26100.1",
+                              "Publisher":  "CN=Microsoft Windows, O=Microsoft Corporation, L=Redmond, S=Washington, C=US"
+                          },
+                          {
+                              "DisplayName":  "Microsoft.Windows.Photos",
+                              "DisplayVersion":  "2025.11040.23001.0",
+                              "Publisher":  "CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US"
+                          },
+                          {
+                              "DisplayName":  "Microsoft.Windows.PinningConfirmationDialog",
+                              "DisplayVersion":  "1000.25140.1001.0",
+                              "Publisher":  "CN=Microsoft Windows, O=Microsoft Corporation, L=Redmond, S=Washington, C=US"
+                          },
+                          {
+                              "DisplayName":  "Microsoft.Windows.PrintQueueActionCenter",
+                              "DisplayVersion":  "1.0.2.0",
+                              "Publisher":  "CN=Microsoft Windows, O=Microsoft Corporation, L=Redmond, S=Washington, C=US"
+                          },
+                          {
+                              "DisplayName":  "Microsoft.Windows.SecureAssessmentBrowser",
+                              "DisplayVersion":  "10.0.26100.1",
+                              "Publisher":  "CN=Microsoft Windows, O=Microsoft Corporation, L=Redmond, S=Washington, C=US"
+                          },
+                          {
+                              "DisplayName":  "Microsoft.Windows.ShellExperienceHost",
+                              "DisplayVersion":  "10.0.26100.3624",
+                              "Publisher":  "CN=Microsoft Windows, O=Microsoft Corporation, L=Redmond, S=Washington, C=US"
+                          },
+                          {
+                              "DisplayName":  "Microsoft.Windows.StartMenuExperienceHost",
+                              "DisplayVersion":  "10.0.26100.4202",
+                              "Publisher":  "CN=Microsoft Windows, O=Microsoft Corporation, L=Redmond, S=Washington, C=US"
+                          },
+                          {
+                              "DisplayName":  "Microsoft.Windows.XGpuEjectDialog",
+                              "DisplayVersion":  "10.0.26100.1",
+                              "Publisher":  "CN=Microsoft Windows, O=Microsoft Corporation, L=Redmond, S=Washington, C=US"
+                          },
+                          {
+                              "DisplayName":  "Microsoft.WindowsCalculator",
+                              "DisplayVersion":  "11.2502.2.0",
+                              "Publisher":  "CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US"
+                          },
+                          {
+                              "DisplayName":  "Microsoft.WindowsNotepad",
+                              "DisplayVersion":  "11.2504.62.0",
+                              "Publisher":  "CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US"
+                          },
+                          {
+                              "DisplayName":  "Microsoft.WindowsStore",
+                              "DisplayVersion":  "22505.1401.17.0",
+                              "Publisher":  "CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US"
+                          },
+                          {
+                              "DisplayName":  "Microsoft.WindowsTerminal",
+                              "DisplayVersion":  "1.22.11751.0",
+                              "Publisher":  "CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US"
+                          },
+                          {
+                              "DisplayName":  "Microsoft.Winget.Source",
+                              "DisplayVersion":  "2025.702.1722.22",
+                              "Publisher":  "CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US"
+                          },
+                          {
+                              "DisplayName":  "Microsoft.XboxGameCallableUI",
+                              "DisplayVersion":  "1000.25128.1000.0",
+                              "Publisher":  "CN=Microsoft Windows, O=Microsoft Corporation, L=Redmond, S=Washington, C=US"
+                          },
+                          {
+                              "DisplayName":  "Microsoft.XboxGamingOverlay",
+                              "DisplayVersion":  "7.325.5191.0",
+                              "Publisher":  "CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US"
+                          },
+                          {
+                              "DisplayName":  "Microsoft.YourPhone",
+                              "DisplayVersion":  "1.25052.76.0",
+                              "Publisher":  "CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US"
+                          },
+                          {
+                              "DisplayName":  "MicrosoftCorporationII.QuickAssist",
+                              "DisplayVersion":  "2.0.36.0",
+                              "Publisher":  "CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US"
+                          },
+                          {
+                              "DisplayName":  "MicrosoftCorporationII.WindowsSubsystemForLinux",
+                              "DisplayVersion":  "2.5.9.0",
+                              "Publisher":  "CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US"
+                          },
+                          {
+                              "DisplayName":  "MicrosoftWindows.54792954.Filons",
+                              "DisplayVersion":  "1000.26100.4351.0",
+                              "Publisher":  "CN=Microsoft Windows, O=Microsoft Corporation, L=Redmond, S=Washington, C=US"
+                          },
+                          {
+                              "DisplayName":  "MicrosoftWindows.56978801.Voiess",
+                              "DisplayVersion":  "1000.26100.4351.0",
+                              "Publisher":  "CN=Microsoft Windows, O=Microsoft Corporation, L=Redmond, S=Washington, C=US"
+                          },
+                          {
+                              "DisplayName":  "MicrosoftWindows.57058570.Speion",
+                              "DisplayVersion":  "1000.26100.4351.0",
+                              "Publisher":  "CN=Microsoft Windows, O=Microsoft Corporation, L=Redmond, S=Washington, C=US"
+                          },
+                          {
+                              "DisplayName":  "MicrosoftWindows.57074914.Livtop",
+                              "DisplayVersion":  "1000.26100.4351.0",
+                              "Publisher":  "CN=Microsoft Windows, O=Microsoft Corporation, L=Redmond, S=Washington, C=US"
+                          },
+                          {
+                              "DisplayName":  "MicrosoftWindows.Client.CBS",
+                              "DisplayVersion":  "1000.26100.107.0",
+                              "Publisher":  "CN=Microsoft Windows, O=Microsoft Corporation, L=Redmond, S=Washington, C=US"
+                          },
+                          {
+                              "DisplayName":  "MicrosoftWindows.Client.Core",
+                              "DisplayVersion":  "1000.26100.46.0",
+                              "Publisher":  "CN=Microsoft Windows, O=Microsoft Corporation, L=Redmond, S=Washington, C=US"
+                          },
+                          {
+                              "DisplayName":  "MicrosoftWindows.Client.CoreAI",
+                              "DisplayVersion":  "1000.26100.4351.0",
+                              "Publisher":  "CN=Microsoft Windows, O=Microsoft Corporation, L=Redmond, S=Washington, C=US"
+                          },
+                          {
+                              "DisplayName":  "MicrosoftWindows.Client.FileExp",
+                              "DisplayVersion":  "1000.26100.3.0",
+                              "Publisher":  "CN=Microsoft Windows, O=Microsoft Corporation, L=Redmond, S=Washington, C=US"
+                          },
+                          {
+                              "DisplayName":  "MicrosoftWindows.Client.OOBE",
+                              "DisplayVersion":  "1000.26100.7.0",
+                              "Publisher":  "CN=Microsoft Windows, O=Microsoft Corporation, L=Redmond, S=Washington, C=US"
+                          },
+                          {
+                              "DisplayName":  "MicrosoftWindows.Client.Photon",
+                              "DisplayVersion":  "1000.26100.8.0",
+                              "Publisher":  "CN=Microsoft Windows, O=Microsoft Corporation, L=Redmond, S=Washington, C=US"
+                          },
+                          {
+                              "DisplayName":  "MicrosoftWindows.Client.WebExperience",
+                              "DisplayVersion":  "525.15301.20.0",
+                              "Publisher":  "CN=Microsoft Windows, O=Microsoft Corporation, L=Redmond, S=Washington, C=US"
+                          },
+                          {
+                              "DisplayName":  "MicrosoftWindows.CrossDevice",
+                              "DisplayVersion":  "1.25052.36.0",
+                              "Publisher":  "CN=Microsoft Windows, O=Microsoft Corporation, L=Redmond, S=Washington, C=US"
+                          },
+                          {
+                              "DisplayName":  "MicrosoftWindows.UndockedDevKit",
+                              "DisplayVersion":  "10.0.26100.1",
+                              "Publisher":  "CN=Microsoft Windows, O=Microsoft Corporation, L=Redmond, S=Washington, C=US"
+                          },
+                          {
+                              "DisplayName":  "Mozilla Firefox (x64 en-US)",
+                              "DisplayVersion":  "140.0.2",
+                              "Publisher":  "Mozilla",
+                              "InstallDate":  null
+                          },
+                          {
+                              "DisplayName":  "Mozilla Maintenance Service",
+                              "DisplayVersion":  "140.0.2",
+                              "Publisher":  "Mozilla",
+                              "InstallDate":  null
+                          },
+                          {
+                              "DisplayName":  "Mozilla Thunderbird (x64 en-US)",
+                              "DisplayVersion":  "139.0.2",
+                              "Publisher":  "Mozilla",
+                              "InstallDate":  null
+                          },
+                          {
+                              "DisplayName":  "MSTeams",
+                              "DisplayVersion":  "25153.1010.3727.5483",
+                              "Publisher":  "CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US"
+                          },
+                          {
+                              "DisplayName":  "Notepad++ (64-bit x64)",
+                              "DisplayVersion":  "8.8.2",
+                              "Publisher":  "Notepad++ Team",
+                              "InstallDate":  null
+                          },
+                          {
+                              "DisplayName":  "NotepadPlusPlus",
+                              "DisplayVersion":  "1.0.0.0",
+                              "Publisher":  "CN=\"Notepad++\", O=\"Notepad++\", L=Saint Cloud, S=Ile-de-France, C=FR"
+                          },
+                          {
+                              "DisplayName":  "NVIDIA Graphics Driver 457.49",
+                              "DisplayVersion":  "457.49",
+                              "Publisher":  "NVIDIA Corporation",
+                              "InstallDate":  "20250514"
+                          },
+                          {
+                              "DisplayName":  "NVIDIA Install Application",
+                              "DisplayVersion":  "2.1002.346.0",
+                              "Publisher":  "NVIDIA Corporation",
+                              "InstallDate":  "20250514"
+                          },
+                          {
+                              "DisplayName":  "NVIDIACorp.NVIDIAControlPanel",
+                              "DisplayVersion":  "8.1.968.0",
+                              "Publisher":  "CN=D6816951-877F-493B-B4EE-41AB9419C326"
+                          },
+                          {
+                              "DisplayName":  "Office 16 Click-to-Run Extensibility Component",
+                              "DisplayVersion":  "16.0.18827.20102",
+                              "Publisher":  "Microsoft Corporation",
+                              "InstallDate":  "20250603"
+                          },
+                          {
+                              "DisplayName":  "Office 16 Click-to-Run Licensing Component",
+                              "DisplayVersion":  "16.0.18827.20176",
+                              "Publisher":  "Microsoft Corporation",
+                              "InstallDate":  "20250702"
+                          },
+                          {
+                              "DisplayName":  "Oh My Posh",
+                              "DisplayVersion":  "26.13.0",
+                              "Publisher":  "Jan De Dobbeleer",
+                              "InstallDate":  "20250702"
+                          },
+                          {
+                              "DisplayName":  "OpenVPN Connect",
+                              "DisplayVersion":  "3.7.2",
+                              "Publisher":  "OpenVPN Inc.",
+                              "InstallDate":  "20250527"
+                          },
+                          {
+                              "DisplayName":  "PokerStars.ro",
+                              "DisplayVersion":  null,
+                              "Publisher":  "PokerStars.ro",
+                              "InstallDate":  "Fri Nov 15 20:38:53 2024\n"
+                          },
+                          {
+                              "DisplayName":  "PostgreSQL 17 ",
+                              "DisplayVersion":  "17.5-1",
+                              "Publisher":  "PostgreSQL Global Development Group",
+                              "InstallDate":  "20250615"
+                          },
+                          {
+                              "DisplayName":  "PowerShell 7-x64",
+                              "DisplayVersion":  "7.5.2.0",
+                              "Publisher":  "Microsoft Corporation",
+                              "InstallDate":  "20250625"
+                          },
+                          {
+                              "DisplayName":  "PowerToys (Preview)",
+                              "DisplayVersion":  "0.92.0",
+                              "Publisher":  "Microsoft Corporation",
+                              "InstallDate":  "20250702"
+                          },
+                          {
+                              "DisplayName":  "Python 3.13.5 Add to Path (64-bit)",
+                              "DisplayVersion":  "3.13.5150.0",
+                              "Publisher":  "Python Software Foundation",
+                              "InstallDate":  "20250612"
+                          },
+                          {
+                              "DisplayName":  "Python 3.13.5 Core Interpreter (64-bit)",
+                              "DisplayVersion":  "3.13.5150.0",
+                              "Publisher":  "Python Software Foundation",
+                              "InstallDate":  "20250612"
+                          },
+                          {
+                              "DisplayName":  "Python 3.13.5 Development Libraries (64-bit)",
+                              "DisplayVersion":  "3.13.5150.0",
+                              "Publisher":  "Python Software Foundation",
+                              "InstallDate":  "20250612"
+                          },
+                          {
+                              "DisplayName":  "Python 3.13.5 Documentation (64-bit)",
+                              "DisplayVersion":  "3.13.5150.0",
+                              "Publisher":  "Python Software Foundation",
+                              "InstallDate":  "20250612"
+                          },
+                          {
+                              "DisplayName":  "Python 3.13.5 Executables (64-bit)",
+                              "DisplayVersion":  "3.13.5150.0",
+                              "Publisher":  "Python Software Foundation",
+                              "InstallDate":  "20250612"
+                          },
+                          {
+                              "DisplayName":  "Python 3.13.5 pip Bootstrap (64-bit)",
+                              "DisplayVersion":  "3.13.5150.0",
+                              "Publisher":  "Python Software Foundation",
+                              "InstallDate":  "20250612"
+                          },
+                          {
+                              "DisplayName":  "Python 3.13.5 Standard Library (64-bit)",
+                              "DisplayVersion":  "3.13.5150.0",
+                              "Publisher":  "Python Software Foundation",
+                              "InstallDate":  "20250612"
+                          },
+                          {
+                              "DisplayName":  "Python 3.13.5 Tcl/Tk Support (64-bit)",
+                              "DisplayVersion":  "3.13.5150.0",
+                              "Publisher":  "Python Software Foundation",
+                              "InstallDate":  "20250612"
+                          },
+                          {
+                              "DisplayName":  "Python 3.13.5 Test Suite (64-bit)",
+                              "DisplayVersion":  "3.13.5150.0",
+                              "Publisher":  "Python Software Foundation",
+                              "InstallDate":  "20250612"
+                          },
+                          {
+                              "DisplayName":  "Python Launcher",
+                              "DisplayVersion":  "3.13.5150.0",
+                              "Publisher":  "Python Software Foundation",
+                              "InstallDate":  "20250612"
+                          },
+                          {
+                              "DisplayName":  "qBittorrent",
+                              "DisplayVersion":  "5.1.2",
+                              "Publisher":  "The qBittorrent project",
+                              "InstallDate":  null
+                          },
+                          {
+                              "DisplayName":  "RealtekSemiconductorCorp.RealtekAudioControl",
+                              "DisplayVersion":  "1.1.137.0",
+                              "Publisher":  "CN=83564403-0B26-46B8-9D84-040F43691D31"
+                          },
+                          {
+                              "DisplayName":  "Revo Uninstaller 2.6.0",
+                              "DisplayVersion":  "2.6.0",
+                              "Publisher":  "VS Revo Group, Ltd.",
+                              "InstallDate":  "20250620"
+                          },
+                          {
+                              "DisplayName":  "RustDesk",
+                              "DisplayVersion":  "1.4.0",
+                              "Publisher":  "RustDesk",
+                              "InstallDate":  null
+                          },
+                          {
+                              "DisplayName":  "SmartPSS 2.003.0000001.0",
+                              "DisplayVersion":  "2.003.0000001.0",
+                              "Publisher":  null,
+                              "InstallDate":  null
+                          },
+                          {
+                              "DisplayName":  "SmartPSSLite 1.003.0000006.0",
+                              "DisplayVersion":  "1.003.0000006.0",
+                              "Publisher":  "Dahua Technology Co.,Ltd",
+                              "InstallDate":  null
+                          },
+                          {
+                              "DisplayName":  "SpotifyAB.SpotifyMusic",
+                              "DisplayVersion":  "1.266.447.0",
+                              "Publisher":  "CN=453637B3-4E12-4CDF-B0D3-2A3C863BF6EF"
+                          },
+                          {
+                              "DisplayName":  "SQL-Profiler 4.1.1 - PostgreSQL 16",
+                              "DisplayVersion":  "4.1.1",
+                              "Publisher":  "EnterpriseDB",
+                              "InstallDate":  "20240820"
+                          },
+                          {
+                              "DisplayName":  "TeamViewer",
+                              "DisplayVersion":  "15.67.4",
+                              "Publisher":  "TeamViewer",
+                              "InstallDate":  null
+                          },
+                          {
+                              "DisplayName":  "The Long Dark",
+                              "DisplayVersion":  null,
+                              "Publisher":  null,
+                              "InstallDate":  "20240921"
+                          },
+                          {
+                              "DisplayName":  "Total Commander 64-bit (Remove or Repair)",
+                              "DisplayVersion":  "11.55",
+                              "publisher":  "Ghisler Software GmbH",
+                              "InstallDate":  null
+                          },
+                          {
+                              "DisplayName":  "UltraViewer version 6.6.113",
+                              "DisplayVersion":  "6.6.113",
+                              "Publisher":  "DucFabulous",
+                              "InstallDate":  "20241229"
+                          },
+                          {
+                              "DisplayName":  "Windows Driver Package - Apple Inc. Apple Wireless Mouse (06/01/2011 4.0.0.1)",
+                              "DisplayVersion":  "06/01/2011 4.0.0.1",
+                              "Publisher":  "Apple Inc.",
+                              "InstallDate":  null
+                          },
+                          {
+                              "DisplayName":  "Windows Driver Package - Ross-Tech HIDClass  (01/05/2014 6.3.0.3)",
+                              "DisplayVersion":  "01/05/2014 6.3.0.3",
+                              "Publisher":  "Ross-Tech",
+                              "InstallDate":  null
+                          },
+                          {
+                              "DisplayName":  "Windows Driver Package - Ross-Tech USB Driver Package (05/12/2014 2.10.00)",
+                              "DisplayVersion":  "05/12/2014 2.10.00",
+                              "Publisher":  "Ross-Tech",
+                              "InstallDate":  null
+                          },
+                          {
+                              "DisplayName":  "Windows PC Health Check",
+                              "DisplayVersion":  "4.0.2410.23001",
+                              "Publisher":  "Microsoft Corporation",
+                              "InstallDate":  "20241030"
+                          },
+                          {
+                              "DisplayName":  "Windows Subsystem for Linux",
+                              "DisplayVersion":  "2.5.9.0",
+                              "Publisher":  "Microsoft Corporation",
+                              "InstallDate":  "20250618"
+                          },
+                          {
+                              "DisplayName":  "Windows.CBSPreview",
+                              "DisplayVersion":  "10.0.19580.1000",
+                              "Publisher":  "CN=Microsoft Windows, O=Microsoft Corporation, L=Redmond, S=Washington, C=US"
+                          },
+                          {
+                              "DisplayName":  "windows.immersivecontrolpanel",
+                              "DisplayVersion":  "10.0.8.1000",
+                              "Publisher":  "CN=Microsoft Windows, O=Microsoft Corporation, L=Redmond, S=Washington, C=US"
+                          },
+                          {
+                              "DisplayName":  "Windows.PrintDialog",
+                              "DisplayVersion":  "6.2.3.0",
+                              "Publisher":  "CN=Microsoft Windows, O=Microsoft Corporation, L=Redmond, S=Washington, C=US"
+                          },
+                          {
+                              "DisplayName":  "WinRAR 7.12 (64-bit)",
+                              "DisplayVersion":  "7.12.0",
+                              "Publisher":  "win.rar GmbH",
+                              "InstallDate":  null
+                          },
+                          {
+                              "DisplayName":  "WinRAR.ShellExtension",
+                              "DisplayVersion":  "1.0.0.2",
+                              "Publisher":  "CN=win.rar GmbH, O=win.rar GmbH, L=Berlin, S=Berlin, C=DE, SERIALNUMBER=HRB 109885, OID.2.5.4.15=Private Organization, OID.1.3.6.1.4.1.311.60.2.1.1=Charlottenburg, OID.1.3.6.1.4.1.311.60.2.1.2=Berlin, OID.1.3.6.1.4.1.311.60.2.1.3=DE"
+                          }
+                      ],
+    "OS":  {
+               "WindowsProductName":  "Windows 10 Pro for Workstations",
+               "WindowsVersion":  "2009",
+               "WindowsBuildLabEx":  "26100.1.amd64fre.ge_release.240331-1435",
+               "TotalPhysicalMemory":  null,
+               "CsProcessors":  [
+                                    {
+                                        "Name":  "AMD Ryzen 7 4800H with Radeon Graphics         ",
+                                        "Manufacturer":  "AuthenticAMD",
+                                        "Description":  "AMD64 Family 23 Model 96 Stepping 1",
+                                        "Architecture":  9,
+                                        "AddressWidth":  64,
+                                        "DataWidth":  64,
+                                        "MaxClockSpeed":  2900,
+                                        "CurrentClockSpeed":  2900,
+                                        "NumberOfCores":  8,
+                                        "NumberOfLogicalProcessors":  16,
+                                        "ProcessorID":  "178BFBFF00860F01",
+                                        "SocketDesignation":  "FP6",
+                                        "ProcessorType":  3,
+                                        "Role":  "CPU",
+                                        "Status":  "OK",
+                                        "CpuStatus":  1,
+                                        "Availability":  3
+                                    }
+                                ],
+               "CsSystemType":  "x64-based PC"
+           }
+}

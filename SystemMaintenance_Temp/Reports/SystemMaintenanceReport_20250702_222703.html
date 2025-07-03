@@ -1,4 +1,55 @@
-﻿[2025-07-02 20:21:07] [INFO] System maintenance started by Bogdan on LAPTOP-BOGDAN
+<!DOCTYPE html>
+<html>
+<head>
+    <title>System Maintenance Report</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; }
+        h1 { color: #333; }
+        h2 { color: #555; }
+        table { width: 100%; border-collapse: collapse; margin: 20px 0; }
+        th, td { padding: 10px; text-align: left; border: 1px solid #ddd; }
+        th { background-color: #f2f2f2; }
+        .success { background-color: #d4edda; }
+        .error { background-color: #f8d7da; }
+        .warning { background-color: #fff3cd; }
+    </style>
+</head>
+<body>
+
+<h1>System Maintenance Report</h1>
+<p><strong>Report Date:</strong> 2025-07-02 22:27:03</p>
+<p><strong>Computer Name:</strong> LAPTOP-BOGDAN</p>
+<p><strong>User:</strong> Bogdan</p>
+<p><strong>PowerShell Version:</strong> 7.5.2</p>
+
+<h2>Summary</h2>
+<table>
+    <tr>
+        <th>Task</th>
+        <th>Status</th>
+        <th>Duration</th>
+        <th>Details</th>
+    </tr>    <tr class='success'>
+        <td>Initialize-CentralCoordinationPolicy</td>
+        <td>Completed</td>
+        <td>0.1 seconds</td>
+        <td>Started: 2025-07-02 22:27:03<br>Ended: 2025-07-02 22:27:03</td>
+    </tr></table>
+
+<h2>Statistics</h2>
+<ul>
+    <li><strong>Total Errors:</strong> 0</li>
+    <li><strong>Total Warnings:</strong> 0</li>
+    <li><strong>Bloatware Removed:</strong> 0</li>
+    <li><strong>Essentials Installed:</strong> 0</li>
+    <li><strong>Packages Updated:</strong> 0</li>
+    <li><strong>Space Freed:</strong> 0 MB</li>
+    <li><strong>Reboot Required:</strong> False</li>
+</ul>
+
+<h2>Detailed Logs</h2>
+<pre>
+[2025-07-02 20:21:07] [INFO] System maintenance started by Bogdan on LAPTOP-BOGDAN
 [2025-07-02 20:21:07] [SUCCESS] Environment initialized. Temp folder: C:\Users\Bogdan\OneDrive\Desktop\Projects\Windows\script_mentenanta\SystemMaintenance_Temp
 [2025-07-02 20:21:07] [INFO] Creating system restore point...
 [2025-07-02 20:21:07] [ERROR] Failed to create restore point: Access denied 
@@ -222,45 +273,8 @@ PowerShell: 7.5.2
 [2025-07-02 22:27:03] [SUCCESS] [SYSTEM] === SYSTEM MAINTENANCE POLICY COMPLETED ===
 [2025-07-02 22:27:03] [INFO] [SYSTEM] === CLEANUP AND FINALIZATION ===
 [2025-07-02 22:27:03] [INFO] [REPORT] Starting HTML Report Generation
-[2025-07-02 22:27:03] [SUCCESS] [REPORT] HTML report generated: C:\Users\Bogdan\OneDrive\Desktop\Projects\Windows\script_mentenanta\SystemMaintenance_Temp\Reports\SystemMaintenanceReport_20250702_222703.html
-[2025-07-02 22:27:05] [SUCCESS] [SYSTEM] === SYSTEM MAINTENANCE POLICY EXECUTION COMPLETED ===
-=== SYSTEM MAINTENANCE POLICY LOG ===
-Started: 2025-07-02 22:28:02
-Script: Unified System Maintenance Policy v1.0.0
-Computer: LAPTOP-BOGDAN
-User: Bogdan
-PowerShell: 5.1.26100.4202
-============================================
 
-[2025-07-02 22:28:02] [INFO] [SYSTEM] Logging system initialized
-[2025-07-02 22:28:02] [INFO] [SYSTEM] Loaded 198 bloatware entries from file
-[2025-07-02 22:28:02] [INFO] [SYSTEM] === SYSTEM MAINTENANCE POLICY STARTED ===
-[2025-07-02 22:28:02] [INFO] [SYSTEM] Tasks to execute: Initialize-CentralCoordinationPolicy, Invoke-SystemInventory
-[2025-07-02 22:28:02] [INFO] [Initialize-CentralCoordinationPolicy] Starting task: Initialize-CentralCoordinationPolicy
-[2025-07-02 22:28:02] [INFO] [COORDINATION] Initializing Central Coordination Policy
-[2025-07-02 22:28:02] [SUCCESS] [COORDINATION] Validated 198 bloatware entries
-[2025-07-02 22:28:02] [SUCCESS] [COORDINATION] Validated 13 essential applications
-[2025-07-02 22:28:02] [SUCCESS] [COORDINATION] Central Coordination Policy initialized successfully
-[2025-07-02 22:28:02] [SUCCESS] [Initialize-CentralCoordinationPolicy] Task completed: Initialize-CentralCoordinationPolicy (Duration: 00:00)
-[2025-07-02 22:28:02] [INFO] [Invoke-SystemInventory] Starting task: Invoke-SystemInventory
-[2025-07-02 22:28:02] [INFO] [INVENTORY] Starting System Inventory
-[2025-07-02 22:28:02] [INFO] [INVENTORY] [INVENTORY] Collecting OS information (10%)
-[2025-07-02 22:28:05] [INFO] [INVENTORY] OS: Windows 10 Pro for Workstations (2009)
-[2025-07-02 22:28:05] [INFO] [INVENTORY] [INVENTORY] Collecting hardware information (25%)
-[2025-07-02 22:28:06] [INFO] [INVENTORY] CPU: AMD Ryzen 7 4800H with Radeon Graphics         , RAM: 32GB
-[2025-07-02 22:28:06] [INFO] [INVENTORY] [INVENTORY] Collecting disk information (40%)
-[2025-07-02 22:28:07] [INFO] [INVENTORY] Disk C: 476.07GB (57.5% free)
-[2025-07-02 22:28:07] [INFO] [INVENTORY] [INVENTORY] Collecting network information (55%)
-[2025-07-02 22:28:08] [INFO] [INVENTORY] Found 3 active network adapters
-[2025-07-02 22:28:08] [INFO] [INVENTORY] [INVENTORY] Collecting installed applications (70%)
-[2025-07-02 22:28:08] [INFO] [INVENTORY] Found 171 installed applications
-[2025-07-02 22:28:08] [INFO] [INVENTORY] [INVENTORY] Collecting services information (85%)
-[2025-07-02 22:28:09] [INFO] [INVENTORY] Services: 129 running, 164 stopped
-[2025-07-02 22:28:09] [INFO] [INVENTORY] [INVENTORY] System inventory completed (100%)
-[2025-07-02 22:28:09] [SUCCESS] [INVENTORY] System inventory completed successfully
-[2025-07-02 22:28:09] [SUCCESS] [Invoke-SystemInventory] Task completed: Invoke-SystemInventory (Duration: 00:06)
-[2025-07-02 22:28:09] [SUCCESS] [SYSTEM] === SYSTEM MAINTENANCE POLICY COMPLETED ===
-[2025-07-02 22:28:09] [INFO] [SYSTEM] === CLEANUP AND FINALIZATION ===
-[2025-07-02 22:28:09] [INFO] [REPORT] Starting HTML Report Generation
-[2025-07-02 22:28:09] [SUCCESS] [REPORT] HTML report generated: C:\Users\Bogdan\OneDrive\Desktop\Projects\Windows\script_mentenanta\SystemMaintenance_Temp\Reports\SystemMaintenanceReport_20250702_222809.html
-[2025-07-02 22:28:10] [SUCCESS] [SYSTEM] === SYSTEM MAINTENANCE POLICY EXECUTION COMPLETED ===
+</pre>
+
+</body>
+</html>
