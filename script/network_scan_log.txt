@@ -1,0 +1,19 @@
+[2025-07-04 16:10:43] [INFO] Starting network scan for range: 192.168.0.0.1 - 192.168.0.3.254
+[2025-07-04 16:11:16] [INFO] Retrieved 171 ARP entries
+[2025-07-04 16:11:16] [INFO] Results exported to network_scan_results.csv
+[2025-07-04 16:11:16] [WARNING] Short MAC address detected: '---' for IP: 192.168.1.10
+[2025-07-04 16:11:16] [INFO] Scan completed in 00:00:33
+[2025-07-04 16:11:16] [INFO] === NETWORK SCAN SUMMARY ===
+Scan Date: 07/04/2025 16:11:16
+IP Range: 192.168.0.0.1 - 192.168.0.3.254
+Total IPs: 1016
+Active Devices: 171
+Utilization: 16.83%
+Conflicts: YES
+Suspicious Devices: 7
+Unknown Vendors: 171
+Virtual Machines: 0
+Scan Duration: 00:00:33
+Threading: Multi (50 threads)
+Generated Reports: 6 files
+Output Files: network_scan_results.csv, summary_network_scan_results.csv, device_analysis_network_scan_results.csv, mac_conflicts_network_scan_results.csv, suspicious_devices_network_scan_results.csv, network_scan_log.txt

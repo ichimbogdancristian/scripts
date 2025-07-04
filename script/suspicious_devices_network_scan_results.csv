@@ -1,0 +1,8 @@
+"IP","MAC","Vendor","Type","RiskLevel","Reasons"
+"192.168.1.37","76-eb-67-e2-27-85","Unknown","dynamic","MEDIUM","Locally administered MAC (potential spoofing)"
+"192.168.1.43","0e-f9-fe-a7-61-be","Unknown","dynamic","MEDIUM","Locally administered MAC (potential spoofing)"
+"192.168.1.52","26-f0-f5-ae-95-69","Unknown","dynamic","MEDIUM","Locally administered MAC (potential spoofing)"
+"192.168.1.72","7a-e8-64-62-5f-6a","Unknown","dynamic","MEDIUM","Locally administered MAC (potential spoofing)"
+"192.168.2.11","76-16-be-86-13-0c","Unknown","dynamic","MEDIUM","Locally administered MAC (potential spoofing)"
+"192.168.2.15","02-f9-c9-93-97-8c","Unknown","dynamic","MEDIUM","Locally administered MAC (potential spoofing)"
+"192.168.3.255","ff-ff-ff-ff-ff-ff","Unknown","static","HIGH","Null/Broadcast MAC address"
