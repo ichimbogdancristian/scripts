@@ -1,0 +1,30 @@
+{
+  "VendorDistribution": null,
+  "Statistics": {
+    "ScanDuration": "00:00:08",
+    "UniqueVendors": 0,
+    "TotalIPsScanned": 1016,
+    "ThreadingMode": "Multi (75 threads)",
+    "PortScanEnabled": {
+      "IsPresent": true
+    },
+    "DNSLookupEnabled": {
+      "IsPresent": true
+    },
+    "OSFingerprintEnabled": {
+      "IsPresent": true
+    },
+    "NetworkUtilization": 0.0,
+    "IPRange": "192.168.0.0.1 - 192.168.0.3.254",
+    "ActiveDevices": 0
+  },
+  "Devices": null,
+  "SuspiciousDevices": [],
+  "ScanMetadata": {
+    "Version": "2.0",
+    "IPRange": "192.168.0.0.1 - 192.168.0.3.254",
+    "ScanDuration": "00:00:08",
+    "Timestamp": "2025-07-04T17:56:28.6916989+03:00"
+  },
+  "Conflicts": []
+}

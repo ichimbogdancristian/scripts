@@ -17,3 +17,8 @@ Scan Duration: 00:00:33
 Threading: Multi (50 threads)
 Generated Reports: 6 files
 Output Files: network_scan_results.csv, summary_network_scan_results.csv, device_analysis_network_scan_results.csv, mac_conflicts_network_scan_results.csv, suspicious_devices_network_scan_results.csv, network_scan_log.txt
+[2025-07-04 17:56:22] [INFO] Starting enhanced network scan for range: 192.168.0.0.1 - 192.168.0.3.254
+[2025-07-04 17:56:22] [INFO] Adaptive threading: Adjusted from 75 to 75 threads
+[2025-07-04 17:56:28] [INFO] Retrieved 0 ARP entries
+[2025-07-04 17:56:28] [INFO] Enhanced results exported to network_scan_results.csv
+[2025-07-04 17:56:29] [INFO] Enhanced network scan completed successfully
